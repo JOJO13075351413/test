@@ -128,7 +128,7 @@
 	--text-color-l: 100%;
 	--border-color-delta-l-sign: 1;
 
-	--primary-color-high: #4da1c0;
+	--primary-color-high: #00000;
 	--primary-color-medium: #448da6;
 	--primary-color-low: #3c7a8d;
 
@@ -175,6 +175,7 @@ table {
 ol, ul {
 	list-style: none;
 }
+
 
 html {
 	font-size: 100%;
