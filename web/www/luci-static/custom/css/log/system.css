@@ -1,0 +1,405 @@
+body[data-page="admin-ad-log-system"] .content {
+    background: #11151b !important;
+    padding: 0 !important;
+    min-height: 0 !important;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+body[data-page="admin-ad-log-system"] #maincontent.container,
+body[data-page="admin-ad-log-system"] #view {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow: hidden;
+}
+
+body[data-page="admin-ad-log-system"] #view>.cbi-section {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow: hidden;
+}
+
+/* ----- Toolbar (Filter Bar) ----- */
+body[data-page="admin-ad-log-system"] .slog-bar {
+    background: #12141a;
+    border-radius: 8px;
+    padding: 4px 4px 10px 4px;
+    color: #cfe6ff;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+body[data-page="admin-ad-log-system"] .slog-bar .toolbar-hsplit {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+body[data-page="admin-ad-log-system"] .slog-bar .controls-left,
+body[data-page="admin-ad-log-system"] .slog-bar .controls-right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+body[data-page="admin-ad-log-system"] .slog-bar label {
+    font-size: 13px;
+    color: #aab6c1;
+}
+
+body[data-page="admin-ad-log-system"] .slog-bar input,
+body[data-page="admin-ad-log-system"] .slog-bar select {
+    background: #0f141d;
+    border: 1px solid #2a3b52;
+    color: #e6f0ff;
+    border-radius: 6px;
+    height: 28px;
+    padding: 0 8px;
+    min-width: 100px;
+}
+
+body[data-page="admin-ad-log-system"] .slog-bar input#kw {
+    width: 240px;
+}
+
+body[data-page="admin-ad-log-system"] .slog-bar .btn {
+    height: 30px;
+    padding: 0 10px;
+    border-radius: 6px;
+    border: 1px solid #2d4b6a;
+    background: #1a1f27;
+    color: #dce6ff;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+body[data-page="admin-ad-log-system"] .slog-bar .btn:hover {
+    background: #2a2d34;
+}
+
+body[data-page="admin-ad-log-system"] .slog-bar .cbi-button-apply {
+    background: #2b77ff;
+    border-color: #2b77ff;
+    color: #fff;
+}
+
+body[data-page="admin-ad-log-system"] .ns-icon-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    border: 1px solid #2a3b52;
+    border-radius: 6px;
+    background: #0f141d;
+    color: inherit;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+body[data-page="admin-ad-log-system"] .ns-icon-btn:hover {
+    background: #1a2330;
+    border-color: #3a5472;
+}
+
+body[data-page="admin-ad-log-system"] .ns-icon-btn .ico {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: center / 18px 18px no-repeat;
+}
+
+body[data-page="admin-ad-log-system"] .ns-icon-btn.ns-refresh .ico {
+    background-image: url('/luci-static/custom/img/refresh.svg');
+}
+
+body[data-page="admin-ad-log-system"] .ns-icon-btn.ns-pause .ico {
+    background-image: url('/luci-static/custom/img/stop.svg');
+}
+
+body[data-page="admin-ad-log-system"] .ns-icon-btn.ns-pause.is-paused .ico {
+    background-image: url('/luci-static/custom/img/run.svg');
+}
+
+body[data-page="admin-ad-log-system"] .ns-icon-btn.ns-export .ico {
+    background-image: url('/luci-static/custom/img/export.svg');
+}
+
+@keyframes log-system-spin-once {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+body[data-page="admin-ad-log-system"] .ns-icon-btn .ico.spin-once {
+    animation: log-system-spin-once .35s linear 1;
+    transform-origin: 50% 50%;
+}
+
+/* ----- Table ----- */
+body[data-page="admin-ad-log-system"] .log-table-wrap {
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow: auto;
+    background: #15181d;
+    border: 1px solid #282e36;
+    border-radius: 8px;
+}
+
+body[data-page="admin-ad-log-system"] table.log-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    table-layout: fixed;
+    font-size: 13px;
+    background: #15181d;
+    color: #c8d0d8;
+    border: 0;
+    border-radius: 0;
+    overflow: visible;
+}
+
+body[data-page="admin-ad-log-system"] table.log-table thead {
+    position: sticky;
+    top: 0;
+    z-index: 4;
+}
+
+body[data-page="admin-ad-log-system"] table.log-table thead th {
+    background: #1e232a;
+    color: #d8dee6;
+    font-weight: 600;
+    text-align: left;
+    padding: 11px 14px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    border-bottom: 1px solid #313844;
+}
+
+body[data-page="admin-ad-log-system"] table.log-table .log-line-number {
+    width: 58px;
+    min-width: 58px;
+    max-width: 58px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-right: 1px solid #2a313a;
+    color: #768698;
+    text-align: right;
+    user-select: none;
+}
+
+body[data-page="admin-ad-log-system"] table.log-table thead .log-line-number {
+    background: #1e232a;
+}
+
+body[data-page="admin-ad-log-system"] table.log-table .log-copy-cell {
+    width: 42px;
+    min-width: 42px;
+    max-width: 42px;
+    padding-right: 8px;
+    padding-left: 8px;
+    text-align: center;
+}
+
+body[data-page="admin-ad-log-system"] table.log-table tbody td {
+    padding: 9px 14px;
+    border-bottom: 1px solid #242b34;
+    vertical-align: top;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size: 12.5px;
+    line-height: 1.65;
+    color: #cbd5df;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    letter-spacing: 0;
+    text-rendering: optimizeLegibility;
+}
+
+body[data-page="admin-ad-log-system"] table.log-table tbody td.log-line-number {
+    color: #6f8092;
+    font-variant-numeric: tabular-nums;
+    overflow-wrap: normal;
+    word-break: normal;
+    white-space: nowrap;
+}
+
+body[data-page="admin-ad-log-system"] table.log-table tbody td.log-copy-cell {
+    vertical-align: middle;
+    white-space: nowrap;
+    overflow-wrap: normal;
+    word-break: normal;
+}
+
+body[data-page="admin-ad-log-system"] .log-copy-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    padding: 0;
+    border: 1px solid #394451;
+    border-radius: 6px;
+    background: #242b34;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateX(3px);
+    transition: opacity .14s ease, transform .14s ease, background .14s ease, border-color .14s ease;
+}
+
+body[data-page="admin-ad-log-system"] .log-copy-btn img {
+    width: 14px;
+    height: 14px;
+    opacity: .78;
+}
+
+body[data-page="admin-ad-log-system"] table.log-table tbody tr:hover .log-copy-btn,
+body[data-page="admin-ad-log-system"] table.log-table tbody tr:focus-within .log-copy-btn {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+body[data-page="admin-ad-log-system"] .log-copy-btn:hover,
+body[data-page="admin-ad-log-system"] .log-copy-btn:focus {
+    background: #2f3a47;
+    border-color: #617184;
+    outline: none;
+}
+
+body[data-page="admin-ad-log-system"] .log-copy-btn.copied {
+    background: #24523b;
+    border-color: #4c9b70;
+}
+
+/* Zebra stripes + hover */
+body[data-page="admin-ad-log-system"] table.log-table tbody tr:nth-child(odd) {
+    background: #15181d;
+}
+
+body[data-page="admin-ad-log-system"] table.log-table tbody tr:nth-child(even) {
+    background: #181d23;
+}
+
+body[data-page="admin-ad-log-system"] table.log-table tbody tr:hover {
+    background: #202833;
+}
+
+/* line number + empty state */
+body[data-page="admin-ad-log-system"] .log-table .ln {
+    opacity: .6;
+    margin-right: .75em;
+    color: #8ea0b4;
+}
+
+body[data-page="admin-ad-log-system"] .nodata {
+    text-align: center;
+    padding: 20px 0;
+    color: #7f93b3;
+    font-size: 14px;
+}
+
+/* ----- Scrollbar (dark) ----- */
+body[data-page="admin-ad-log-system"] ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+body[data-page="admin-ad-log-system"] ::-webkit-scrollbar-track {
+    background: #11151b;
+}
+
+body[data-page="admin-ad-log-system"] ::-webkit-scrollbar-thumb {
+    background: #2a2d34;
+    border-radius: 6px;
+    border: 2px solid #11151b;
+}
+
+body[data-page="admin-ad-log-system"] ::-webkit-scrollbar-thumb:hover {
+    background: #3c4352;
+}
+
+/* ----- Pager (wrap + bar) ----- */
+body[data-page="admin-ad-log-system"] .cbi-section-footer {
+    margin-top: auto;
+    position: sticky;
+    bottom: 0;
+    z-index: 10;
+    background: #11151b;
+    border-top: 1px solid #333;
+}
+
+body[data-page="admin-ad-log-system"] .cbi-section-footer .pager-modern {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 8px 12px;
+    color: #cfe6ff;
+}
+
+body[data-page="admin-ad-log-system"] .pm-left,
+body[data-page="admin-ad-log-system"] .pm-center,
+body[data-page="admin-ad-log-system"] .pm-right {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+body[data-page="admin-ad-log-system"] .pm-btn {
+    min-width: 28px;
+    height: 26px;
+    padding: 0 8px;
+    border-radius: 6px;
+    border: 1px solid #444;
+    background: #2a2d34;
+    color: #e0e0e0;
+    cursor: pointer;
+}
+
+body[data-page="admin-ad-log-system"] .pm-btn:hover {
+    background: #343842;
+}
+
+body[data-page="admin-ad-log-system"] .pm-btn.active {
+    background: #3f6ab8;
+    border-color: #3f6ab8;
+    color: #fff;
+}
+
+body[data-page="admin-ad-log-system"] .pm-btn[disabled] {
+    opacity: .45;
+    cursor: not-allowed;
+}
+
+body[data-page="admin-ad-log-system"] .pm-ellipsis {
+    color: #aab6c1 !important;
+    padding: 0 6px;
+}
+
+body[data-page="admin-ad-log-system"] .cbi-section-footer select,
+body[data-page="admin-ad-log-system"] .pager-modern select,
+body[data-page="admin-ad-log-system"] .pm-ps {
+    height: 28px;
+    padding: 0 8px;
+    border: 1px solid #2a3b52;
+    border-radius: 6px;
+    background: #0f141d;
+    color: #cfe6ff;
+    min-width: 64px;
+    width: auto;
+}

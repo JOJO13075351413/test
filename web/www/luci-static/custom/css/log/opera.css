@@ -1,0 +1,575 @@
+body[data-page="admin-ad-log-operation"] .content {
+    background: #11151b !important;
+    padding: 0 !important;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+body[data-page="admin-ad-log-operation"] #maincontent.container {
+    padding: 0 !important;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    min-height: 0;
+}
+
+body[data-page="admin-ad-log-operation"] #view {
+    margin: 0 !important;
+    padding: 0 !important;
+    flex: 1 1 auto;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+body[data-page="admin-ad-log-operation"] .audit-bar {
+    background: #11151b;
+    border-radius: 8px;
+    padding: 10px 0 0 0;
+    color: #cfe6ff;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+body[data-page="admin-ad-log-operation"] .audit-bar .ns-filter {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 12px;
+    align-items: center;
+    background: #11151b;
+    border-radius: 6px;
+}
+
+body[data-page="admin-ad-log-operation"] .audit-bar .left,
+body[data-page="admin-ad-log-operation"] .audit-bar .right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+body[data-page="admin-ad-log-operation"] .audit-bar .left {
+    min-width: 0;
+    flex-wrap: wrap;
+}
+
+body[data-page="admin-ad-log-operation"] .audit-bar .lbl {
+    color: #cfe6ff;
+    opacity: .9;
+    font-size: 13px;
+}
+
+body[data-page="admin-ad-log-operation"] .audit-bar .ns-btn {
+    height: 32px;
+    padding: 0 12px;
+    border-radius: 6px;
+    border: 1px solid #2a3b52 !important;
+    background: #1d2026 !important;
+    color: #cfe6ff !important;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+body[data-page="admin-ad-log-operation"] .audit-bar .ns-btn:hover {
+    filter: brightness(1.06);
+}
+
+body[data-page="admin-ad-log-operation"] .audit-bar .ns-btn.primary,
+body[data-page="admin-ad-log-operation"] .audit-bar .ns-btn.ad-c-btn--primary {
+    background: #2b77ff !important;
+    border-color: #2b77ff !important;
+    color: #fff !important;
+}
+
+body[data-page="admin-ad-log-operation"] .audit-bar .ns-btn[disabled] {
+    opacity: 0.55;
+    cursor: not-allowed;
+    filter: none;
+}
+
+body[data-page="admin-ad-log-operation"] .audit-bar .adui-single-select {
+    min-width: 120px;
+}
+
+body[data-page="admin-ad-log-operation"] .audit-bar .ns-icon-btn {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    border: 1px solid #2a3b52 !important;
+    border-radius: 6px;
+    background-color: #0f141d !important;
+    color: #cfe6ff !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+body[data-page="admin-ad-log-operation"] .audit-bar .ns-icon-btn:hover {
+    filter: brightness(1.06);
+}
+
+body[data-page="admin-ad-log-operation"] .audit-bar .ns-icon-btn:active {
+    transform: translateY(1px);
+}
+
+body[data-page="admin-ad-log-operation"] .audit-bar .ns-icon-btn[disabled] {
+    opacity: 0.55;
+    cursor: not-allowed;
+    transform: none;
+}
+
+body[data-page="admin-ad-log-operation"] .audit-bar .ns-icon-btn .ico {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: center/18px 18px no-repeat;
+    background-image: url('/luci-static/custom/img/refresh.svg');
+    position: relative;
+    top: 1px;
+}
+
+body[data-page="admin-ad-log-operation"] .audit-bar .ns-icon-btn.ns-export .ico {
+    background-image: url('/luci-static/custom/img/export.svg');
+}
+
+body[data-page="admin-ad-log-operation"] .audit-bar .ns-icon-btn .ico.is-busy {
+    animation: opera-refresh-spin 0.8s linear infinite;
+}
+
+body[data-page="admin-ad-log-operation"] .audit-bar .ns-icon-btn .ico.spin-once {
+    animation: opera-refresh-spin 0.35s linear 1;
+}
+
+@keyframes opera-refresh-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 900px) {
+    body[data-page="admin-ad-log-operation"] .audit-bar .ns-filter {
+        grid-template-columns: 1fr;
+    }
+
+    body[data-page="admin-ad-log-operation"] .audit-bar .right {
+        justify-content: flex-end;
+    }
+}
+
+body[data-page="admin-ad-log-operation"] table.audit-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    background: #1d2026;
+    color: #cfe6ff;
+    border-radius: 8px;
+}
+
+body[data-page="admin-ad-log-operation"] table.audit-table thead th {
+    background: #24272e;
+    color: #dce6ff;
+    font-weight: 600;
+    text-align: left;
+    padding: 10px 12px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+body[data-page="admin-ad-log-operation"] table.audit-table tbody td {
+    padding: 9px 12px;
+    border-bottom: 1px solid #212a36;
+    vertical-align: middle;
+    color: #e9e9ea;
+}
+
+body[data-page="admin-ad-log-operation"] table.audit-table tbody tr:nth-child(odd) {
+    background: #11151b;
+}
+
+body[data-page="admin-ad-log-operation"] table.audit-table tbody tr:nth-child(even) {
+    background: #1d2026;
+}
+
+body[data-page="admin-ad-log-operation"] table.audit-table tbody tr.zebra-0.row-main {
+    background: #11151b;
+}
+
+body[data-page="admin-ad-log-operation"] table.audit-table tbody tr.zebra-1.row-main {
+    background: #1d2026;
+}
+
+body[data-page="admin-ad-log-operation"] table.audit-table tbody tr.row-main:hover {
+    background: #343b4a !important;
+}
+
+body[data-page="admin-ad-log-operation"] table.audit-table tbody tr.row-main.row-expanded {
+    background: #343b4a !important;
+}
+
+body[data-page="admin-ad-log-operation"] table.audit-table tbody tr.row-main {
+    cursor: pointer;
+}
+
+body[data-page="admin-ad-log-operation"] table.audit-table tbody tr.row-main .expand-mark {
+    display: inline-block;
+    width: 12px;
+    margin-right: 6px;
+    color: #7f93b3;
+}
+
+body[data-page="admin-ad-log-operation"] tr.row-detail td {
+    background: #181d24 !important;
+    border-bottom: none;
+    padding: 0;
+}
+
+body[data-page="admin-ad-log-operation"] .detail {
+    border-radius: 6px;
+    background: #10141a;
+    color: #cfe6ff;
+    margin: 6px 0;
+}
+
+body[data-page="admin-ad-log-operation"] .detail-title {
+    font-weight: 600;
+    padding: 6px 2px 6px 2px;
+    background: #181d24;
+    color: #e9e9ea;
+    opacity: .9;
+}
+
+body[data-page="admin-ad-log-operation"] .detail-pre {
+    font-family: monospace;
+    font-size: 12px;
+    padding: 10px;
+    white-space: pre-wrap;
+    line-height: 1.4;
+    color: #aab6c1;
+}
+
+body[data-page="admin-ad-log-operation"] .nodata {
+    text-align: center;
+    padding: 20px 0;
+    color: #7f93b3;
+    font-size: 14px;
+}
+
+body[data-page="admin-ad-log-operation"] .cbi-section::-webkit-scrollbar,
+body[data-page="admin-ad-log-operation"] table.audit-table::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+body[data-page="admin-ad-log-operation"] .cbi-section::-webkit-scrollbar-thumb,
+body[data-page="admin-ad-log-operation"] table.audit-table::-webkit-scrollbar-thumb {
+    background-color: #444;
+    border-radius: 6px;
+    border: 2px solid #1d2026;
+}
+
+body[data-page="admin-ad-log-operation"] table.audit-table::-webkit-scrollbar-thumb:hover {
+    background-color: #666;
+}
+
+body[data-page="admin-ad-log-operation"] .cbi-section-footer,
+body[data-page="admin-ad-log-operation"] .audit-footer {
+    position: sticky;
+    bottom: 0;
+    z-index: 10;
+    background: #11151b;
+    border-top: 1px solid #333;
+}
+
+body[data-page="admin-ad-log-operation"] .pager-modern {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 8px 12px;
+    color: #cfe6ff;
+}
+
+body[data-page="admin-ad-log-operation"] .pager-modern.hidden {
+    display: none;
+}
+
+body[data-page="admin-ad-log-operation"] .pm-left,
+body[data-page="admin-ad-log-operation"] .pm-center,
+body[data-page="admin-ad-log-operation"] .pm-right {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+body[data-page="admin-ad-log-operation"] .pm-btn {
+    min-width: 28px;
+    height: 26px;
+    padding: 0 8px;
+    border-radius: 6px;
+    border: 1px solid #444;
+    background: #2a2d34;
+    color: #e0e0e0;
+    cursor: pointer;
+}
+
+body[data-page="admin-ad-log-operation"] .pm-btn:hover {
+    background: #343842;
+}
+
+body[data-page="admin-ad-log-operation"] .pm-btn.active {
+    background: #3f6ab8;
+    border-color: #3f6ab8;
+    color: #fff;
+}
+
+body[data-page="admin-ad-log-operation"] .pm-btn[disabled] {
+    opacity: 0.45;
+    cursor: not-allowed;
+}
+
+body[data-page="admin-ad-log-operation"] .pm-ps {
+    height: 28px;
+    padding: 0 8px;
+    border: 1px solid #2a3b52;
+    border-radius: 6px;
+    background: #0f141d;
+    color: #cfe6ff;
+    min-width: 64px;
+    width: auto;
+}
+
+body[data-page="admin-ad-log-operation"] .pm-ellipsis {
+    color: #aab6c1 !important;
+    padding: 0 6px;
+}
+
+#audit-toast-layer {
+    position: fixed;
+    top: calc(var(--header-h, 56px) + 8px);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 99999;
+    width: min(560px, calc(100% - 32px));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    pointer-events: none;
+}
+
+.audit-toast {
+    pointer-events: auto;
+    max-width: 100%;
+    padding: 10px 14px;
+    border-radius: 10px;
+    background: rgba(20, 23, 31, .95);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, .08);
+    opacity: 0;
+    transform: translateY(-4px);
+    transition: opacity .12s ease, transform .12s ease;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.audit-toast.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+body[data-page="admin-ad-log-operation"] #view>.cbi-page-actions {
+    display: none !important;
+}
+
+body[data-page="admin-ad-log-operation"] .detail-pre {
+    background: #0f141d !important;
+    color: #cfe6ff !important;
+    border-radius: 6px;
+}
+
+body[data-page="admin-ad-log-operation"] tr.row-detail pre {
+    background: #0f141d !important;
+    color: #e9e9ea !important;
+    opacity: .9;
+}
+
+body[data-page="admin-ad-log-operation"] #view,
+body[data-page="admin-ad-log-operation"] #maincontent.container,
+body[data-page="admin-ad-log-operation"] .cbi-section {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+}
+
+body[data-page="admin-ad-log-operation"] .cbi-section {
+    flex: 1 1 auto;
+}
+
+body[data-page="admin-ad-log-operation"] .cbi-section-footer,
+body[data-page="admin-ad-log-operation"] .audit-footer {
+    margin-top: auto;
+    position: sticky;
+    bottom: 0;
+    z-index: 10;
+}
+
+body[data-page="admin-ad-log-operation"] .cbi-section-footer .pager-modern,
+body[data-page="admin-ad-log-operation"] .audit-footer .pager-modern {
+    position: sticky;
+    bottom: 0;
+}
+
+body[data-page="admin-ad-log-operation"] #view>.cbi-section {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    flex: 1 1 auto;
+}
+
+body[data-page="admin-ad-log-operation"] #view>.cbi-section>.audit-bar.cbi-section,
+body[data-page="admin-ad-log-operation"] #view>.cbi-section>.cbi-section {
+    display: block;
+    flex: 0 0 auto;
+    min-height: auto;
+}
+
+body[data-page="admin-ad-log-operation"] #view>.cbi-section>.cbi-section-footer,
+body[data-page="admin-ad-log-operation"] #view>.cbi-section>.audit-footer {
+    margin-top: auto;
+    position: sticky;
+    bottom: 0;
+    z-index: 10;
+}
+
+.audit-bar.cbi-section {
+    margin-bottom: 10px;
+}
+
+body[data-page="admin-ad-log-operation"] ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+body[data-page="admin-ad-log-operation"] ::-webkit-scrollbar-track {
+    background: #11151b;
+}
+
+body[data-page="admin-ad-log-operation"] ::-webkit-scrollbar-thumb {
+    background: #2a2d34;
+    border-radius: 6px;
+    border: 2px solid #11151b;
+}
+
+body[data-page="admin-ad-log-operation"] ::-webkit-scrollbar-thumb:hover {
+    background: #3c4352;
+}
+
+tr.row-main {
+    height: 50px;
+}
+body[data-page="admin-ad-log-operation"] table.audit-table td.result-ok {
+    color: #3ad27a;
+    font-weight: 600;
+}
+body[data-page="admin-ad-log-operation"] table.audit-table td.result-bad {
+    color: #ff6b6b;
+    font-weight: 600;
+}
+
+body[data-page="admin-ad-log-operation"] table.audit-table thead th:nth-child(1),
+body[data-page="admin-ad-log-operation"] table.audit-table tbody td:nth-child(1) {
+    width: 8%;
+}
+
+body[data-page="admin-ad-log-operation"] table.audit-table thead th:nth-child(2),
+body[data-page="admin-ad-log-operation"] table.audit-table tbody td:nth-child(2) {
+    width: 12%;
+}
+
+body[data-page="admin-ad-log-operation"] table.audit-table thead th:nth-child(3),
+body[data-page="admin-ad-log-operation"] table.audit-table tbody td:nth-child(3) {
+    width: 20%;
+}
+
+body[data-page="admin-ad-log-operation"] table.audit-table thead th:nth-child(4),
+body[data-page="admin-ad-log-operation"] table.audit-table tbody td:nth-child(4) {
+    width: 20%;
+}
+
+body[data-page="admin-ad-log-operation"] table.audit-table thead th:nth-child(5),
+body[data-page="admin-ad-log-operation"] table.audit-table tbody td:nth-child(5) {
+    width: 10%;
+}
+
+body[data-page="admin-ad-log-operation"] table.audit-table thead th:nth-child(6),
+body[data-page="admin-ad-log-operation"] table.audit-table tbody td:nth-child(6) {
+    width: 10%;
+}
+
+body[data-page="admin-ad-log-operation"] table.audit-table thead th:nth-child(7),
+body[data-page="admin-ad-log-operation"] table.audit-table tbody td:nth-child(7) {
+    width: 20%;
+}
+
+body[data-page="admin-ad-log-operation"] .content,
+body[data-page="admin-ad-log-operation"] #maincontent.container,
+body[data-page="admin-ad-log-operation"] #view {
+    overflow: hidden !important;
+}
+
+body[data-page="admin-ad-log-operation"] #view>.audit-page {
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+body[data-page="admin-ad-log-operation"] .audit-page>.audit-bar {
+    flex: 0 0 auto;
+    position: relative;
+    z-index: 20;
+    margin-bottom: 10px;
+}
+
+body[data-page="admin-ad-log-operation"] .audit-page>.audit-table-wrap {
+    flex: 1 1 auto !important;
+    min-height: 0 !important;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scrollbar-gutter: stable;
+    display: block !important;
+}
+
+body[data-page="admin-ad-log-operation"] .audit-page>.cbi-section-footer {
+    flex: 0 0 auto;
+    margin-top: 0;
+    position: relative;
+    bottom: auto;
+}
+
+body[data-page="admin-ad-log-operation"] .audit-page>.audit-table-wrap::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+body[data-page="admin-ad-log-operation"] .audit-page>.audit-table-wrap::-webkit-scrollbar-track {
+    background: #11151b;
+}
+
+body[data-page="admin-ad-log-operation"] .audit-page>.audit-table-wrap::-webkit-scrollbar-thumb {
+    background: #2a2d34;
+    border-radius: 6px;
+    border: 2px solid #11151b;
+}
+
+body[data-page="admin-ad-log-operation"] .audit-page>.audit-table-wrap::-webkit-scrollbar-thumb:hover {
+    background: #3c4352;
+}

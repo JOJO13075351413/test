@@ -1,0 +1,1056 @@
+body[data-page="admin-ad-network-wireless-config"] .content {
+    background: #12141a !important;
+    padding: 0 !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body[data-page="admin-ad-network-wireless-config"] #maincontent.container,
+body[data-page="admin-ad-network-wireless-config"] #view {
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    min-height: 0;
+}
+
+body[data-page="admin-ad-network-wireless-config"] #view > .cbi-page-actions {
+    display: none !important;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-wrap {
+    padding: 2px 12px 12px 2px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+    flex: 1 1 auto;
+    min-height: 0;
+    padding-bottom: 0;
+    padding-top: 2px;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex: 1 1 auto;
+    min-height: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    background: #1d2026;
+    border: 1px solid #2a3b52;
+    border-radius: 8px;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-subtabs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    border-bottom: 1px solid var(--ad-border) !important;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-subtabs-left {
+    display: flex;
+    align-items: center;
+    min-width: 0;
+    flex: 1 1 auto;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-subtabs-right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex: 0 0 auto;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-subtabs-right .ns-common-main-link.adui-ss {
+    height: 30px;
+    min-width: 150px;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-redundancy-toggle {
+    height: 30px;
+    min-width: 128px;
+    padding: 0 14px;
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-redundancy-toggle.ns-redundancy-on {
+    background: #1a1f27;
+    border-color: #2d4b6a;
+    color: #cfe6ff;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-redundancy-toggle.ns-redundancy-off {
+    background: #2b77ff;
+    border-color: #2b77ff;
+    color: #ffffff;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-subtab {
+    background: transparent !important;
+    color: #9fbbe0;
+    padding: 8px 14px;
+    border: 0;
+    border-bottom: 3px solid var(--ad-border);
+    border-radius: 0 !important;
+    cursor: pointer;
+    transition: color .15s ease;
+    user-select: none;
+    margin: 0 !important;
+    height: 40px !important;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none !important;
+    box-shadow: none !important;
+    border-top: 0 !important;
+    border-left: 0 !important;
+    border-right: 0 !important;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-subtab:hover {
+    color: #cfe6ff !important;
+    background: transparent !important;
+    border-bottom-color: var(--ad-border) !important;
+    border-bottom-width: 3px !important;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-subtab:hover,
+body[data-page="admin-ad-network-wireless-config"] .ns-subtab:focus,
+body[data-page="admin-ad-network-wireless-config"] .ns-subtab:active {
+    outline: none !important;
+    box-shadow: none !important;
+    border-top: 0 !important;
+    border-left: 0 !important;
+    border-right: 0 !important;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-subtab.active {
+    color: #ffffff;
+    border-bottom-color: #2b77ff !important;
+    border-bottom-width: 3px !important;
+    font-weight: 600;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-subtab.active:hover,
+body[data-page="admin-ad-network-wireless-config"] .ns-subtab.active:focus,
+body[data-page="admin-ad-network-wireless-config"] .ns-subtab.active:active,
+body[data-page="admin-ad-network-wireless-config"] .ns-subtab.active:focus-visible {
+    color: #ffffff !important;
+    background: transparent !important;
+    border-bottom-color: #2b77ff !important;
+    border-bottom-width: 3px !important;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-subtab:focus-visible {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-subtab::-moz-focus-inner {
+    border: 0;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-wireless-panel-wrap {
+    flex: 1 1 auto;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-wireless-panel {
+    flex: 1 1 auto;
+    min-height: 0;
+    height: auto;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-config-block {
+    border: 1px solid #2a3b52;
+    border-radius: 8px;
+    background: #1d2026;
+    box-sizing: border-box;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-config-block {
+    flex: 1 1 auto;
+    min-height: 0;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-actions-block {
+    flex: 0 0 auto;
+    padding: 0;
+    align-self: flex-start;
+    margin-top: 0;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-sizing: border-box;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-wireless-title {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-wireless-desc {
+    color: #9fbbe0;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-main {
+    flex: 1 1 auto;
+    min-height: 0;
+    border: none;
+    border-radius: 8px;
+    background: #1d2026;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-wireless-panel[data-key="wirelessLowPower"] .ns-w24-main {
+    background: transparent;
+    border: none;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-wireless-panel[data-key="wirelessLowPower"] .ns-w24-config-block {
+    border: none;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-wireless-panel[data-key="wirelessCommon"] .ns-w24-main {
+    background: transparent;
+    border: none;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-wireless-panel[data-key="wirelessCommon"] .ns-w24-config-block {
+    border: none;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-config-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 16px;
+    align-items: stretch;
+    flex: 1 1 auto;
+    min-height: 0;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-config-card {
+    min-width: 0;
+    min-height: 0;
+    border: 1px solid #2a3b52;
+    border-radius: 8px;
+    background: #151b24;
+    padding: 12px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-config-card-title {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-config-card-body {
+    min-width: 0;
+    flex: 1 1 auto;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-config-card-body--basic {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-advanced-form {
+    margin-top: auto;
+    padding-top: 8px;
+    border-top: 1px solid #2a3b52;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-main-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: start;
+    gap: 20px;
+    position: relative;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-main-grid::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    margin-left: -0.5px;
+    background: #2a3b52;
+    pointer-events: none;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-main-left,
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-main-right {
+    min-width: 0;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-main-right,
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-side-card,
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-mac-wrap,
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-mac-list,
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-mac-row,
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-mac-row .ns-w24-mac-input {
+    min-width: 0;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-main-left {
+    padding-right: 10px;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-main-right {
+    padding-left: 20px;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-side-card {
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-side-title {
+    color: #cfe6ff;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-form-row {
+    display: grid;
+    grid-template-columns: 180px minmax(260px, 520px);
+    align-items: center;
+    gap: 12px;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-form-row.ns-w24-form-row-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-form-label {
+    color: #cfe6ff;
+    font-size: 13px;
+    text-align: right;
+    padding-right: 4px;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-form-control {
+    min-width: 0;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-input-wrap {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    max-width: 520px;
+    min-width: 0;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-form-control .ns-input,
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-form-control .ns-select {
+    width: 420px;
+    max-width: 420px;
+    transition: border-color .8s ease, box-shadow .8s ease;
+    flex: 0 0 420px;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-form-control .adui-ss {
+    width: 420px;
+    max-width: 420px;
+    flex: 0 0 420px;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-work-channel-control {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    max-width: 520px;
+    min-width: 0;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-work-channel-fields {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 420px;
+    max-width: 420px;
+    flex: 0 0 420px;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-form-control .ns-work-channel-fields .adui-ss {
+    flex: 1 1 auto;
+    min-width: 0;
+    width: auto;
+    max-width: none;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-work-channel-custom {
+    flex: 0 0 88px !important;
+    width: 88px !important;
+    max-width: 88px !important;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-form-control .ns-w24-gateway-mac.adui-msi {
+    width: 420px;
+    max-width: 420px;
+    min-width: 420px;
+    gap: 0;
+    padding: 0 8px;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-form-control .ns-w24-gateway-mac.adui-msi .adui-msi-slot {
+    width: auto;
+    height: 30px;
+    min-width: 0;
+    flex: 1 1 0;
+    padding: 0 2px;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-form-control .ns-w24-gateway-mac.adui-msi .adui-msi-sep {
+    margin: 0;
+    flex: 0 0 auto;
+    width: 8px;
+    text-align: center;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-form-control .is-readonly {
+    opacity: 0.85;
+    cursor: not-allowed;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-form-control .adui-ss.ns-w24-readonly {
+    filter: grayscale(0.9) brightness(0.7);
+    cursor: not-allowed;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-form-control .ns-input.ns-input-alert {
+    border-color: #ec4343 !important;
+    box-shadow: 0 0 0 2px rgba(236, 67, 67, .18);
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-mac-row .ns-w24-mac-input .adui-msi.ns-input-alert {
+    border-color: #ec4343 !important;
+    box-shadow: 0 0 0 2px rgba(236, 67, 67, .18);
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-input-msg {
+    color: #ff8080;
+    font-size: 12px;
+    line-height: 1.2;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity .8s ease;
+    pointer-events: none;
+    min-width: 64px;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-input-msg.show {
+    opacity: 1;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-lp-field-control {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    max-width: 520px;
+    min-width: 0;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-lp-field-control .ns-input {
+    width: 420px;
+    max-width: 420px;
+    flex: 0 0 420px;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-lp-field-control .ns-lp-select.adui-ss {
+    width: 420px;
+    max-width: 420px;
+    flex: 0 0 420px;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-lp-field-control .ns-lp-refresh-btn,
+body[data-page="admin-ad-network-wireless-config"] .ns-lp-field-control .ns-lp-save-btn {
+    flex: 0 0 32px;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-lp-field-control .ns-lp-refresh-btn img {
+    width: 18px;
+    height: 18px;
+    opacity: 1;
+    will-change: transform;
+    transform-origin: 50% 50%;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-lp-field-control .ns-lp-save-btn img {
+    width: 20px;
+    height: 20px;
+    opacity: 1;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-lp-field-control .ns-lp-refresh-btn img.spin-once {
+    animation: ns-lp-refresh-spin 0.35s linear 1;
+}
+
+@keyframes ns-lp-refresh-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-lp-field-control .ns-w24-input-msg {
+    min-width: 96px;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-mac-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    max-width: 420px;
+    max-height: 320px;
+    overflow: visible;
+    padding-right: 0;
+    box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: #2a3b52 #11161d;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-mac-wrap::-webkit-scrollbar {
+    width: 8px;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-mac-wrap::-webkit-scrollbar-track {
+    background: #11161d;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-mac-wrap::-webkit-scrollbar-thumb {
+    background: #2a3b52;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-main-right .ns-w24-mac-wrap {
+    max-width: 100%;
+    max-height: 320px;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-mac-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-mac-row {
+    display: grid;
+    grid-template-columns: 120px minmax(0, 1fr) 32px;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-mac-row .ns-w24-mac-type .adui-ss {
+    width: 120px;
+    min-width: 120px;
+    max-width: 120px;
+    flex: 0 0 120px;
+    --adui-ss-control-height: 32px;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-mac-row .ns-w24-mac-input .adui-msi {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    min-height: 32px;
+    gap: 0;
+    padding: 0 8px;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-mac-row .ns-w24-mac-msg-wrap {
+    min-width: 150px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: calc(100% + 8px);
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-mac-row .ns-w24-mac-msg {
+    display: inline-block;
+    transition: none;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-mac-row .ns-w24-mac-input .adui-msi-slot {
+    width: auto;
+    height: 30px;
+    min-width: 0;
+    flex: 1 1 0;
+    padding: 0 2px;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-mac-row .ns-w24-mac-input .adui-msi-slot.ns-w24-mac-slot-disabled {
+    color: #77859b;
+    opacity: 0.45;
+    pointer-events: none;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-mac-row .ns-w24-mac-input .adui-msi-sep {
+    margin: 0;
+    flex: 0 0 auto;
+    width: 8px;
+    text-align: center;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-mac-row .ns-w24-mac-input .adui-msi-sep.ns-w24-mac-sep-disabled {
+    color: #414a58;
+    opacity: 0.35;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-mac-row .ns-w24-mac-del-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-mac-add-wrap {
+    display: flex;
+    justify-content: flex-start;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-icon-btn {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    border: 1px solid #2a3b52;
+    border-radius: 6px;
+    background: #151b24;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-icon-btn img {
+    width: 14px;
+    height: 14px;
+    opacity: 0.9;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-mac-del img {
+    width: 18px;
+    height: 18px;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-form-row.ns-w24-form-row--mac {
+    align-items: flex-start;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-form-row.ns-w24-form-row--mac .ns-w24-form-label {
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-icon-btn.is-disabled,
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-icon-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-actions .ns-btn.is-disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-w24-actions .ns-w24-modify-btn {
+    min-width: 88px;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .modal,
+body[data-page="admin-ad-network-wireless-config"] .ui-modal,
+body[data-page="admin-ad-network-wireless-config"] .modal-body {
+    background: #1d2026 !important;
+    color: #e8eef6 !important;
+    border-radius: 12px !important;
+    border: none;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ui-modal .btn,
+body[data-page="admin-ad-network-wireless-config"] .modal .btn {
+    background: #1a1f27;
+    color: #e8eef6;
+    border: 1px solid #2d4b6a;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ui-modal .btn:hover,
+body[data-page="admin-ad-network-wireless-config"] .modal .btn:hover {
+    background: #243449;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ui-modal .btn.cbi-button-negative,
+body[data-page="admin-ad-network-wireless-config"] .modal .btn.cbi-button-negative {
+    background: #b83a45;
+    border-color: #b83a45;
+    color: #fff;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ui-modal .btn.cbi-button-negative:hover,
+body[data-page="admin-ad-network-wireless-config"] .modal .btn.cbi-button-negative:hover {
+    background: #cc4a55;
+    border-color: #cc4a55;
+}
+
+body[data-page="admin-ad-network-wireless-config"] #modal_overlay {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+body[data-page="admin-ad-network-wireless-config"] #modal_overlay .modal,
+body[data-page="admin-ad-network-wireless-config"] #modal_overlay .ui-modal {
+    margin: 0 !important;
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ui-modal .right,
+body[data-page="admin-ad-network-wireless-config"] .modal .right {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+body[data-page="admin-ad-network-wireless-config"] #modal_overlay .modal.ns-general-modal,
+body[data-page="admin-ad-network-wireless-config"] #modal_overlay .ui-modal.ns-general-modal {
+    width: min(430px, 92vw) !important;
+    border-radius: 10px !important;
+    border: 1px solid #2a3b52 !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .4) !important;
+    padding: 14px !important;
+}
+
+body[data-page="admin-ad-network-wireless-config"] #modal_overlay .modal.ns-apply-modal,
+body[data-page="admin-ad-network-wireless-config"] #modal_overlay .ui-modal.ns-apply-modal {
+    width: min(420px, 90vw) !important;
+}
+
+body[data-page="admin-ad-network-wireless-config"] #modal_overlay .modal.ns-general-modal .right,
+body[data-page="admin-ad-network-wireless-config"] #modal_overlay .ui-modal.ns-general-modal .right {
+    gap: 10px;
+    margin-top: 8px;
+}
+
+body[data-page="admin-ad-network-wireless-config"] #modal_overlay .modal.ns-general-modal button.btn,
+body[data-page="admin-ad-network-wireless-config"] #modal_overlay .ui-modal.ns-general-modal button.btn {
+    background: #1a1f27;
+    color: #dce6ff;
+    border: 1px solid #2d4b6a;
+    cursor: pointer;
+    padding: 0 12px;
+    border-radius: 6px;
+    height: 32px;
+    width: 100px;
+    min-width: 100px;
+}
+
+body[data-page="admin-ad-network-wireless-config"] #modal_overlay .modal.ns-general-modal button.btn.cbi-button-action,
+body[data-page="admin-ad-network-wireless-config"] #modal_overlay .ui-modal.ns-general-modal button.btn.cbi-button-action {
+    background: #2b77ff;
+    border-color: #2b77ff;
+    color: #fff;
+}
+
+body[data-page="admin-ad-network-wireless-config"] #modal_overlay .modal.ns-general-modal button.btn:hover,
+body[data-page="admin-ad-network-wireless-config"] #modal_overlay .ui-modal.ns-general-modal button.btn:hover {
+    filter: brightness(1.06);
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-general-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-width: 0;
+    width: 100%;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-general-row {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    align-items: center;
+    gap: 10px;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-general-label {
+    color: #cfe6ff;
+    font-size: 13px;
+    text-align: right;
+    padding-right: 4px;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-general-control {
+    min-width: 0;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-general-control .ns-general-input {
+    width: 100%;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-general-ip-slot.adui-msi {
+    width: 100%;
+    min-height: 32px;
+    gap: 0;
+    padding: 0 8px;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-general-ip-slot.adui-msi.is-invalid {
+    border-color: #ec4343;
+    box-shadow: 0 0 0 2px rgba(236, 67, 67, .18);
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-general-ip-slot .adui-msi-slot {
+    width: auto;
+    height: 30px;
+    min-width: 0;
+    flex: 1 1 0;
+    padding: 0 2px;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-general-ip-slot .adui-msi-sep {
+    width: 8px;
+    text-align: center;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-general-radio-group {
+    display: inline-flex;
+    align-items: center;
+    gap: 18px;
+    min-height: 32px;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-general-radio-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #dbe8ff;
+    font-size: 13px;
+}
+
+body[data-page="admin-ad-network-wireless-config"] .ns-general-radio-item input[type="radio"] {
+    width: 14px;
+    height: 14px;
+    margin: 0;
+}
+
+@media (max-width: 900px) {
+    body[data-page="admin-ad-network-wireless-config"] .ns-w24-config-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    body[data-page="admin-ad-network-wireless-config"] .ns-w24-config-card {
+        padding: 10px;
+    }
+
+    body[data-page="admin-ad-network-wireless-config"] .ns-w24-main-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    body[data-page="admin-ad-network-wireless-config"] .ns-w24-main-left {
+        padding-right: 0;
+    }
+
+    body[data-page="admin-ad-network-wireless-config"] .ns-w24-main-right {
+        padding-left: 0;
+    }
+
+    body[data-page="admin-ad-network-wireless-config"] .ns-w24-main-grid::before {
+        display: none;
+    }
+
+    body[data-page="admin-ad-network-wireless-config"] .ns-w24-side-card {
+        padding: 10px;
+    }
+
+    body[data-page="admin-ad-network-wireless-config"] .ns-subtabs {
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    body[data-page="admin-ad-network-wireless-config"] .ns-w24-form-row {
+        grid-template-columns: 1fr;
+        gap: 6px;
+    }
+
+    body[data-page="admin-ad-network-wireless-config"] .ns-w24-input-wrap {
+        max-width: 100%;
+    }
+
+    body[data-page="admin-ad-network-wireless-config"] .ns-lp-field-control {
+        max-width: 100%;
+    }
+
+    body[data-page="admin-ad-network-wireless-config"] .ns-lp-field-control .ns-input {
+        width: 100%;
+        max-width: 100%;
+        flex: 1 1 auto;
+    }
+
+    body[data-page="admin-ad-network-wireless-config"] .ns-w24-form-control .ns-input,
+    body[data-page="admin-ad-network-wireless-config"] .ns-w24-form-control .ns-select,
+    body[data-page="admin-ad-network-wireless-config"] .ns-w24-form-control .adui-ss {
+        width: 100%;
+        max-width: 100%;
+        flex: 1 1 auto;
+    }
+
+    body[data-page="admin-ad-network-wireless-config"] .ns-w24-mac-wrap {
+        max-width: 100%;
+    }
+
+    body[data-page="admin-ad-network-wireless-config"] .ns-w24-mac-row {
+        grid-template-columns: 1fr;
+    }
+
+    body[data-page="admin-ad-network-wireless-config"] .ns-w24-mac-row .ns-w24-mac-msg-wrap {
+        position: static;
+        transform: none;
+        min-width: 0;
+        min-height: 14px;
+    }
+
+    body[data-page="admin-ad-network-wireless-config"] .ns-w24-mac-row .ns-w24-mac-type .adui-ss {
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+        flex: 1 1 auto;
+    }
+
+    body[data-page="admin-ad-network-wireless-config"] .ns-w24-mac-row .ns-w24-mac-del-wrap {
+        justify-content: flex-start;
+    }
+
+    body[data-page="admin-ad-network-wireless-config"] .ns-subtabs {
+        justify-content: flex-start;
+        gap: 8px;
+    }
+
+    body[data-page="admin-ad-network-wireless-config"] .ns-subtabs-left {
+        flex: 0 0 auto;
+        min-width: max-content;
+    }
+
+    body[data-page="admin-ad-network-wireless-config"] .ns-general-form {
+        min-width: 0;
+    }
+
+    body[data-page="admin-ad-network-wireless-config"] .ns-general-row {
+        grid-template-columns: 1fr;
+        gap: 6px;
+    }
+
+    body[data-page="admin-ad-network-wireless-config"] .ns-general-label {
+        text-align: left;
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 1280px) {
+    body[data-page="admin-ad-network-wireless-config"] .ns-wrap,
+    body[data-page="admin-ad-network-wireless-config"] .ns-card,
+    body[data-page="admin-ad-network-wireless-config"] .ns-wireless-panel-wrap,
+    body[data-page="admin-ad-network-wireless-config"] .ns-wireless-panel,
+    body[data-page="admin-ad-network-wireless-config"] .ns-w24-main {
+        min-height: auto;
+    }
+
+    body[data-page="admin-ad-network-wireless-config"] .ns-card {
+        flex: 0 0 auto;
+    }
+
+    body[data-page="admin-ad-network-wireless-config"] .ns-w24-config-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    body[data-page="admin-ad-network-wireless-config"] .ns-w24-main-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    body[data-page="admin-ad-network-wireless-config"] .ns-w24-main-grid::before {
+        display: none;
+    }
+
+    body[data-page="admin-ad-network-wireless-config"] .ns-w24-main-left {
+        padding-right: 0;
+    }
+
+    body[data-page="admin-ad-network-wireless-config"] .ns-w24-main-right {
+        padding-left: 0;
+    }
+
+    body[data-page="admin-ad-network-wireless-config"] .ns-w24-side-card {
+        padding: 10px 0 0 0;
+    }
+
+    body[data-page="admin-ad-network-wireless-config"] .ns-w24-main-right .ns-w24-mac-wrap {
+        max-width: 420px;
+    }
+}

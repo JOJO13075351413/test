@@ -1,0 +1,395 @@
+<%# LuCI Bootstrap header – sidebar + content (open half, footer will close) -%>
+<% local sys=require "luci.sys" local util=require "luci.util" local http=require "luci.http" local
+  disp=require "luci.dispatcher" local boardinfo=util.ubus("system", "board" ) local node=disp.context.dispatched
+  local darkpref if theme=="bootstrap-dark" then darkpref="true" elseif theme=="bootstrap-light" then darkpref="false"
+  end http.prepare_content("text/html") -- whether root has NO password (same logic as stock LuCI) local _nopwd=false
+  if luci.sys.user.getuser("root") and not luci.sys.user.getpasswd("root") then _nopwd=true end -%>
+<!DOCTYPE html>
+<html lang="<%=luci.i18n.context.lang%>" <%=ifattr(darkpref ~=nil, "data-darkmode" , darkpref) %>>
+
+<head>
+  <meta charset="utf-8">
+  <title><%:无线安全接入点管理系统%></title>
+
+  <% if darkpref==nil then %>
+    <script>
+      (function () {
+        try {
+          var mq = matchMedia('(prefers-color-scheme: dark)');
+          var root = document.documentElement;
+          function apply(m) { root.setAttribute('data-darkmode', m.matches); }
+          mq.addEventListener('change', apply); apply(mq);
+        } catch (e) { }
+      })();
+    </script>
+    <% end %>
+
+      <link rel="stylesheet" href="<%=media%>/cascade.css?v=git-25.119.42935-6f57431">
+      <link rel="stylesheet" media="only screen and (max-device-width: 854px)"
+        href="<%=media%>/mobile.css?v=git-25.119.42935-6f57431">
+      <link rel="shortcut icon" href="/luci-static/custom/img/logo.svg">
+
+      <link rel="stylesheet" href="/luci-static/custom/css/custom.css">
+
+      <% if node and node.css then %>
+        <link rel="stylesheet" href="<%=resource%>/<%=node.css%>">
+        <% end %>
+
+          <style>
+            :root {
+              --gap: 8px;
+              --sidew: 260px;
+            }
+
+            body {
+              padding-top: 0 !important;
+            }
+
+            .app {
+              min-height: 100vh;
+              background: #0f1115;
+            }
+
+            .app-header {
+              height: 60px;
+              display: flex;
+              align-items: center;
+              padding: 0 16px;
+              background: #0f172a;
+              color: #e5e7eb;
+              border-bottom: 1px solid rgba(0, 0, 0, .35);
+            }
+
+            .app-header .brand {
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              font-weight: 700;
+            }
+
+            .app-header .brand img {
+              max-height: 28px;
+              display: block;
+            }
+
+            .app-body {
+              display: flex;
+              gap: var(--gap);
+              padding: var(--gap);
+              box-sizing: border-box;
+            }
+
+            .card {
+              background: #111827;
+              border: 1px solid rgba(255, 255, 255, .06);
+              border-radius: 12px;
+            }
+
+            .sidenav {
+              width: var(--sidew);
+              display: flex;
+              flex-direction: column;
+              overflow: hidden;
+            }
+
+            .sidenav .scroll {
+              overflow: auto;
+              padding: 12px 8px;
+            }
+
+            .content-wrap {
+              flex: 1 1 auto;
+              display: flex;
+              flex-direction: column;
+            }
+
+            .content {
+              background: #11151b;
+              border-radius: 12px;
+              border: 1px solid rgba(0, 0, 0, .08);
+              min-height: calc(100vh - 56px - var(--gap)*2);
+              padding: 16px;
+            }
+
+            body[data-page^="admin-system"] .content,
+            body[data-page^="admin-status"] .content,
+            body[data-page^="admin-network"] .content {
+              background: #fff;
+            }
+
+            #view {
+              padding: 0;
+            }
+
+            #topmenu {
+              list-style: none;
+              margin: 0;
+              padding: 0;
+            }
+
+            #topmenu>li>a {
+              display: block;
+              padding: 10px 12px;
+              color: #e5e7eb;
+              text-decoration: none;
+              border-radius: 8px;
+            }
+
+            #topmenu>li>a:hover {
+              background: rgba(255, 255, 255, .06);
+            }
+
+            #topmenu li .dropdown-menu {
+              position: static;
+              display: none;
+              padding: 6px 0 8px;
+              margin: 0;
+              background: transparent;
+              border: 0;
+            }
+
+            #topmenu li.open>.dropdown-menu {
+              display: block;
+            }
+
+            .cbi-page-actions.control-group {
+              background: #1d2026;
+            }
+
+            body[data-page^="admin-system"] .cbi-page-actions.control-group,
+            body[data-page^="admin-status"] .cbi-page-actions.control-group,
+            body[data-page^="admin-network"] .cbi-page-actions.control-group {
+              background: #fff;
+            }
+
+            body[data-page^="admin-ad-security-firewall"] .tabs > li > a,
+            body[data-page^="admin-ad-security-firewall"] ul.tabs {
+              background: #12141a;
+            }
+
+            body[data-page^="admin-ad-security-firewall"] .tabs > li {
+              border: none;
+            }
+
+            body[data-page^="admin-ad-security-firewall"] .content {
+              padding: 0 !important;
+              min-height: 100vh;
+              display: flex;
+              flex-direction: column;
+              background: #11151b !important;
+            }
+
+            body[data-page^="admin-ad-security-firewall"] #maincontent.container {
+              margin: 6px;
+              padding: 0 !important;
+              display: flex;
+              flex-direction: column;
+              flex: 1 1 auto;
+              min-height: 0;
+              overflow-x: hidden;
+              box-sizing: border-box;
+              background-color: #11151b;
+            }
+
+            body[data-page^="admin-ad-security-firewall"] #view {
+              margin: 0 !important;
+              padding: 0 !important;
+              border: none;
+              display: flex;
+              flex-direction: column;
+              flex: 1 1 auto;
+              min-height: 0;
+              box-sizing: border-box;
+              background-color: #11151b;
+            }
+
+            body[data-page^="admin-ad-security-firewall"] .cbi-map {
+              display: flex;
+              flex-direction: column;
+              flex: 1 1 auto;
+              min-height: 0;
+            }
+
+            body[data-page^="admin-ad-security-firewall"] ul.tabs {
+              display: flex;
+              align-items: center;
+              margin: 0 !important;
+              padding: 0 260px 0 0 !important;
+              border: 0 !important;
+              border-bottom: 1px solid #12141a !important;
+            }
+
+            body[data-page^="admin-ad-security-firewall"] .tabmenu-item-zones,
+            body[data-page^="admin-ad-security-firewall"] .tabmenu-item-forwards,
+            body[data-page^="admin-ad-security-firewall"] .tabmenu-item-rules,
+            body[data-page^="admin-ad-security-firewall"] .tabmenu-item-snats {
+              height: 40px !important;
+              margin-left: 6px;
+              padding: 8px 14px !important;
+              border: 0 !important;
+              border-bottom: 3px solid transparent !important;
+              border-radius: 0 !important;
+              background: transparent !important;
+              color: #9fbbe0 !important;
+              box-sizing: border-box;
+              font-size: 14px !important;
+              line-height: 20px !important;
+              text-decoration: none !important;
+            }
+
+            body[data-page^="admin-ad-security-firewall"] .tabmenu-item-zones.active,
+            body[data-page^="admin-ad-security-firewall"] .tabmenu-item-forwards.active,
+            body[data-page^="admin-ad-security-firewall"] .tabmenu-item-rules.active,
+            body[data-page^="admin-ad-security-firewall"] .tabmenu-item-snats.active {
+              color: #eaf2ff !important;
+              border-bottom-color: #2b77ff !important;
+              font-weight: 600 !important;
+            }
+
+            body[data-page^="admin-ad-security-firewall"] ul.cbi-tabmenu {
+              display: flex;
+              align-items: center;
+              min-height: 40px;
+              margin: 0 0 12px !important;
+              padding: 0 !important;
+              background: transparent !important;
+              border-bottom: 1px solid #2a3b52 !important;
+            }
+
+            body[data-page^="admin-ad-security-firewall"] .cbi-tab,
+            body[data-page^="admin-ad-security-firewall"] .cbi-tab-disabled {
+              height: 40px !important;
+              margin: 0 !important;
+              padding: 0 !important;
+              border: 0 !important;
+              border-radius: 0 !important;
+              background: transparent !important;
+            }
+
+            body[data-page^="admin-ad-security-firewall"] .cbi-tab {
+              border-bottom: 3px solid #2b77ff !important;
+              color: #eaf2ff !important;
+              font-weight: 600 !important;
+            }
+
+            body[data-page^="admin-ad-security-firewall"] .cbi-tab-disabled {
+              border-bottom: 3px solid #2a3b52 !important;
+              color: #9fbbe0 !important;
+            }
+
+            body[data-page^="admin-ad-security-firewall"] .cbi-tab>a,
+            body[data-page^="admin-ad-security-firewall"] .cbi-tab-disabled>a {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              height: 100%;
+              padding: 8px 14px !important;
+              box-sizing: border-box;
+              border: 0 !important;
+              background: transparent !important;
+              color: inherit !important;
+              text-decoration: none !important;
+            }
+
+            @media (max-width: 920px) {
+              .app-body {
+                flex-direction: column;
+              }
+
+              .sidenav {
+                width: auto;
+              }
+            }
+          </style>
+
+          <script src="<%=url('admin/translations', luci.i18n.context.lang)%>?v=git-25.119.42935-6f57431"></script>
+          <script src="<%=resource%>/luci.js?v=git-25.119.42935-6f57431"></script>
+          <script src="<%=resource%>/cbi.js?v=git-25.119.42935-6f57431"></script>
+          <script>
+            window.CURRENT_USER = "<%= luci.dispatcher.context.authuser or translate('未知用户') %>";
+            window.CURRENT_CLIENT_IP = "<%= util.pcdata(http.getenv('REMOTE_ADDR') or '-') %>";
+          </script>
+          <script src="/luci-static/custom/js/custom.js"></script>
+          <script src="/luci-static/custom/js/modal.js"></script>
+          <script>
+            function loadCssOnce(href) {
+                return new Promise(function (resolve, reject) {
+                    var id = 'ad-css-' + btoa(href).replace(/=+/g, '');
+                    var exist = document.getElementById(id);
+                    if (exist) {
+                        resolve();
+                        return;
+                    }
+
+                    var link = document.createElement('link');
+                    link.id = id;
+                    link.rel = 'stylesheet';
+                    link.href = href;
+
+                    link.onload = function () {
+                        resolve();
+                    };
+                    link.onerror = function () {
+                        reject(new Error('Failed to load css ' + href));
+                    };
+
+                    document.head.appendChild(link);
+                });
+            }
+
+            function loadScriptOnce(url) {
+                return new Promise(function (resolve, reject) {
+                    var id = 'ad-script-' + btoa(url).replace(/=+/g, '');
+                    if (document.getElementById(id)) {
+                        resolve();
+                        return;
+                    }
+                    var s = document.createElement('script');
+                    s.id = id;
+                    s.async = false;
+                    s.src = url;
+                    s.onload = function () {
+                        resolve();
+                    };
+                    s.onerror = function () {
+                        reject(new Error('Failed to load ' + url));
+                    };
+                    document.head.appendChild(s);
+                });
+            }
+          </script>
+
+</head>
+
+<body class="app lang_<%=luci.i18n.context.lang%>"
+  data-page="<%= pcdata(table.concat(disp.context.requestpath, '-')) %>"
+  data-root-empty="<%= _nopwd and '1' or '0' %>">
+
+  <header class="app-header">
+    <div class="brand">
+      <img src="/luci-static/custom/img/logo.svg" alt="logo-icon">
+      <img src="/luci-static/custom/img/logo-txt.svg" alt="logo-text">
+    </div>
+    <ul id="modemenu" class="nav" style="margin-left:auto;display:flex;align-items:center;"></ul>
+    <!-- <div id="indicators" class="pull-right" style="margin-left:12px;"></div> -->
+  </header>
+
+  <div class="app-body">
+    <aside class="card sidenav">
+      <div class="sidenav-fixed">
+        <div class="product-card">
+          <img class="pc-icon" src="/luci-static/custom/img/logo-ad.png" alt="<%:无线接入点%>">
+          <div class="pc-switch">
+            <div class="pc-switch-label" data-devtype="ad"><%:无线接入点%></div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll">
+        <ul id="topmenu" class="nav-vertical"></ul>
+      </div>
+    </aside>
+
+    <main class="content-wrap">
+      <div class="content">
+        <div id="maincontent" class="container">
+          <div id="tabmenu" style="display:none"></div>

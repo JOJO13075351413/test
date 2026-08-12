@@ -1,0 +1,174 @@
+.content {
+    padding: 0;
+}
+
+.ns-graph-root {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px;
+    background: #1d2026;
+    border-radius: 8px;
+    box-sizing: border-box;
+    min-height: calc(100vh - 200px);
+}
+
+#view .ns-graph-root {
+    height: 100%;
+    margin: 0;
+}
+
+.ns-graph-root .ns-subtabs {
+    display: flex;
+    border-bottom: 1px solid #2a3b52 !important;
+}
+
+.ns-graph-root .ns-subtab {
+    background: transparent !important;
+    color: #9fbbe0;
+    padding: 8px 14px;
+    border: 0;
+    border-bottom: 3px solid #2a3b52;
+    border-radius: 0 !important;
+    transition: color .15s ease, border-color .15s ease, border-bottom-width .15s ease;
+    cursor: pointer;
+    user-select: none;
+}
+
+.ns-graph-root .ns-subtab:hover {
+    color: #cfe6ff;
+}
+
+.ns-graph-root .ns-subtab.active {
+    color: #fff;
+    border-bottom-color: #2b77ff;
+    border-bottom-width: 3px;
+    font-weight: 600;
+}
+
+.ns-graph-root .ns-graph-body {
+    flex: 1 1 auto;
+    margin-top: 4px;
+    padding: 12px;
+    border-radius: 8px;
+    background: #1d2026;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.ns-graph-root h3,
+.ns-graph-root h2 {
+    color: #e2e8f0;
+}
+
+.ns-graph-root p,
+.ns-graph-root span,
+.ns-graph-root label {
+    color: #c0caf5;
+}
+
+.ns-graph-root .cbi-section {
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0 0 8px 0;
+}
+
+.ns-graph-root svg {
+    background: #1d2026;
+    border-radius: 6px;
+}
+
+.ns-graph-root table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #1d2026;
+    border-radius: 6px;
+    overflow: hidden;
+    color: #cfe6ff;
+}
+
+.ns-graph-root table thead th {
+    padding: 8px 10px;
+    background: #1d2026;
+    color: #e2e8f0;
+    border-bottom: 1px solid #2a3142;
+    text-align: left;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.ns-graph-root table tbody td {
+    padding: 6px 10px;
+
+    color: #c0caf5;
+    font-size: 12px;
+}
+
+.ns-graph-root table tr:nth-child(odd) {
+    background: #1d2026;
+}
+
+.ns-graph-root table tr:nth-child(even) {
+    background: #24272e;
+}
+
+.ns-graph-root .legend,
+.ns-graph-root .legend span {
+    color: #c0caf5;
+}
+
+.ns-graph-root ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.ns-graph-root ::-webkit-scrollbar-track {
+    background: #10131a;
+}
+
+.ns-graph-root ::-webkit-scrollbar-thumb {
+    background: #2a3b52;
+    border-radius: 4px;
+}
+
+.ns-graph-root ::-webkit-scrollbar-thumb:hover {
+    background: #3b4f6a;
+}
+
+small#scale {
+    color: #cfe6ff;
+}
+
+.td {
+    border-top: none !important;
+
+}
+
+ul.cbi-tabmenu {
+    background: #1d2026;
+}
+
+.ns-graph-root .cbi-tabmenu {
+    display: none;
+}
+
+.ns-graph-root .ns-if-select-wrap {
+    margin-bottom: 8px;
+}
+
+.ns-graph-root .ns-if-select-wrap .adui-ss {
+    display: inline-flex;
+    width: auto;
+    max-width: 320px;
+}
+
+button.btn.toggle-lookups {
+    height: 32px;
+    padding: 0 12px;
+    border-radius: 6px;
+    border: 1px solid #2d4b6a;
+    background: #20334a;
+    color: #cfe6ff;
+    cursor: pointer;
+}

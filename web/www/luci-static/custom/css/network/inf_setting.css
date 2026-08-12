@@ -1,0 +1,986 @@
+body[data-page="admin-ad-network-inf-setting"] .content {
+    background: #12141a !important;
+    padding: 0 !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body[data-page="admin-ad-network-inf-setting"] #maincontent.container {
+    padding: 0 !important;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    min-height: 0;
+}
+
+body[data-page="admin-ad-network-inf-setting"] #view {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    min-height: 0;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+}
+
+body[data-page="admin-ad-network-inf-setting"] #view>.cbi-page-actions {
+    display: none !important;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-wrap {
+    padding: 2px 12px 12px 2px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 0;
+    flex: 1 1 auto;
+    padding-bottom: 0;
+    padding-top: 2px;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex: 1 1 auto;
+    min-height: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    background: var(--ad-bg-panel);
+    border: 1px solid var(--ad-border);
+    border-radius: 8px;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-filter {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 12px;
+    align-items: center;
+    background: var(--ad-bg-panel);
+    border-radius: 6px;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-filter .left {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    min-width: 0;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-search {
+    position: relative;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-input {
+    width: 100px;
+    height: 32px;
+    padding: 0 10px;
+    background: var(--ad-bg-input);
+    border: 1px solid var(--ad-border);
+    border-radius: 6px;
+    color: #e6f0ff;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-btn {
+    height: 32px;
+    padding: 0 12px;
+    border-radius: 6px;
+    border: 1px solid #2d4b6a;
+    background: var(--ad-bg-panel);
+    color: #dce3ea;
+    cursor: pointer;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-btn:hover {
+    filter: brightness(1.06);
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-btn.primary {
+    background: var(--ad-accent);
+    color: #fff;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-filter .right {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-btn.ghost {
+    background: transparent;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-icon-btn {
+    width: 32px;
+    height: 32px;
+    border: 1px solid var(--ad-border);
+    border-radius: 6px;
+    background-color: var(--ad-bg-input);
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-icon-btn .ico {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: center/18px 18px no-repeat;
+    background-image: url('/luci-static/custom/img/refresh.svg');
+    position: relative;
+    top: 1px;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-icon-btn.ns-pause .ico {
+    background-image: url('/luci-static/custom/img/stop.svg');
+}
+body[data-page="admin-ad-network-inf-setting"] .ns-icon-btn.ns-pause.is-paused .ico {
+    background-image: url('/luci-static/custom/img/run.svg');
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-icon-btn .ico.spin-once {
+    animation: infset-spin-one 0.35s linear 1;
+    will-change: transform;
+    transform-origin: 50% 50%;
+}
+
+@keyframes infset-spin-one {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-pag-info {
+    color: var(--ad-text-primary);
+    font-size: 13px;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-pag-controls {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-page-btn {
+    height: 28px;
+    padding: 0 10px;
+    border-radius: 6px;
+    border: 1px solid var(--ad-border);
+    background: #20334a;
+    color: var(--ad-text-primary);
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-page-now {
+    min-width: 28px;
+    height: 28px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    background: var(--ad-accent);
+    color: #fff;
+    font-weight: 700;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-select {
+    height: 32px;
+    border-radius: 6px;
+    border: 1px solid var(--ad-border);
+    background: var(--ad-bg-input);
+    color: var(--ad-text-primary);
+    padding: 0 8px;
+    width: auto;
+    inline-size: fit-content;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-footer>* {
+    flex: 0 0 auto;
+    white-space: nowrap;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-pag-size {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--ad-text-primary);
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-subtabs {
+    display: flex;
+    border-bottom: 1px solid var(--ad-border) !important;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-subtab {
+    background: transparent !important;
+    color: #9fbbe0;
+    padding: 8px 14px;
+    border: 0;
+    border-bottom: 3px solid var(--ad-border);
+    border-radius: 0 !important;
+    transition: color .15s ease, border-color .15s ease, border-bottom-width .15s ease;
+    cursor: pointer;
+    user-select: none;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-subtab:hover {
+    color: var(--ad-text-primary);
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-subtab.active {
+    color: #ffffff;
+    border-bottom-color: var(--ad-accent);
+    border-bottom-width: 3px;
+    font-weight: 600;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-subtab:focus-visible {
+    outline: 2px solid #2b77ff55;
+    outline-offset: 2px;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-mode-switch {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0;
+    flex: 0 0 auto;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-mode-filter-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 0;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-mode-tab {
+    height: 36px;
+    padding: 0 12px;
+    border-radius: 6px;
+    border: 1px solid var(--ad-border);
+    background: var(--ad-bg-input);
+    color: #9fbbe0;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: color .15s ease, border-color .15s ease, background-color .15s ease;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-mode-tab:hover {
+    color: var(--ad-text-primary);
+    border-color: #3a5475;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-mode-tab.active {
+    color: #fff;
+    background: var(--ad-accent);
+    border-color: var(--ad-accent);
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-mode-tab:focus-visible {
+    outline: 2px solid #2b77ff55;
+    outline-offset: 1px;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-mode-icon {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+    flex: 0 0 16px;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-mode-text {
+    line-height: 1;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-mode-body {
+    flex: 1 1 auto;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-mode-filter-row .ns-filter {
+    flex: 1 1 auto;
+    min-width: 0;
+    background: transparent;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-mode-filter-row .ns-filter .left {
+    flex-wrap: wrap;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-mode-filter-row .ns-filter .right {
+    justify-content: flex-end;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-mode-body-panel {
+    gap: 12px;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-panel-top {
+    flex: 0 0 42%;
+    min-height: 220px;
+    border: none;
+    border-radius: 0;
+    background: var(--ad-bg-panel);
+    padding: 0;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    gap: 12px;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-panel-top-left,
+body[data-page="admin-ad-network-inf-setting"] .ns-panel-top-right {
+    min-height: 0;
+    border: 1px solid #2a3b52;
+    border-radius: 8px;
+    background: #181b21;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-panel-subtitle {
+    color: #cfe6ff;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-wired-grid-wrap {
+    flex: 1 1 auto;
+    min-height: 120px;
+    border: none;
+    border-radius: 8px;
+    padding: 8px;
+    box-sizing: border-box;
+    overflow: auto;
+    width: 66.6667%;
+    max-width: 100%;
+    align-self: center;
+    background: #1d2026;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-wired-grid-body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-wired-table {
+    width: auto;
+    border-collapse: separate;
+    border-spacing: 2px 2px;
+    table-layout: fixed;
+    margin: 0 auto;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-wired-table td {
+    border: none;
+    width: 48px;
+    height: 42px;
+    padding: 0;
+    line-height: 0;
+    font-size: 0;
+    text-align: center;
+    vertical-align: middle;
+    color: #dbe8ff;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-wired-cell {
+    position: relative;
+    height: 42px;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-wired-cell::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    pointer-events: none;
+    z-index: 3;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-wired-cell.empty {
+    color: #6f829e;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-wired-cell.selected {
+    z-index: 2;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-wired-cell.selected::after {
+    border-width: 2px;
+    border-color: #2b77ff;
+    border-radius: 3px;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-wired-port-btn {
+    width: 48px;
+    height: 42px;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    line-height: 0;
+    font-size: 0;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-wired-port-icon {
+    width: 48px;
+    height: 42px;
+    object-fit: fill;
+    display: block;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-wired-port-no {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #9fbbe0;
+    font-size: 11px;
+    line-height: 1;
+    pointer-events: none;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-wired-port-no.up {
+    top: -12px;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-wired-port-no.bottom {
+    bottom: -12px;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-wired-legend {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    color: #9fbbe0;
+    font-size: 12px;
+    border: none;
+    background: #1d2026;
+    border-radius: 8px;
+    min-height: 34px;
+    padding: 4px 10px;
+    width: 33.3333%;
+    max-width: 100%;
+    align-self: center;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-wired-legend-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-wired-legend-icon {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-panel-empty {
+    flex: 1 1 auto;
+    min-height: 120px;
+    border: 1px dashed #2a3b52;
+    border-radius: 8px;
+    color: #9fbbe0;
+    background: #131821;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-wireless-state-list {
+    flex: 1 1 auto;
+    min-height: 88px;
+    border: none;
+    border-radius: 8px;
+    background: #1d2026;
+    padding: 8px 12px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 4px;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-wireless-state-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    min-height: 28px;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-wireless-state-left {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #dbe8ff;
+    font-size: 13px;
+    line-height: 1;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-wireless-state-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    display: block;
+    flex: 0 0 24px;
+    transform: translateY(-0.8px);
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-wireless-state-right {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-wireless-state-right.enabled {
+    color: #17d466;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-wireless-state-right.disabled {
+    color: #9fbbe0;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-wireless-extra {
+    border: none;
+    background: transparent;
+    border-radius: 8px;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow: hidden;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-wireless-col {
+    border: none;
+    background: #1d2026;
+    border-radius: 8px;
+    padding: 14px 10px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 0;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-wireless-col-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    color: var(--ad-text-primary);
+    font-size: 13px;
+    line-height: 1.5;
+    min-height: 28px;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-wireless-col-row.head {
+    min-height: 42px;
+    margin-bottom: 4px;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-wireless-head-left {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    color: #dbe8ff;
+    min-width: 0;
+    flex: 0 0 48%;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-wireless-col-row .k {
+    flex: 0 0 auto;
+    color: #9fbbe0;
+    white-space: nowrap;
+    text-align: left;
+    min-width: 0;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-wireless-col-row .v {
+    flex: 0 0 auto;
+    color: var(--ad-text-primary);
+    text-align: left;
+    word-break: break-all;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-wireless-col-row:not(.head) {
+    justify-content: flex-start;
+    gap: 12px;
+    padding-left: 6px;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-wireless-head-state {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.2;
+    border: 1px solid transparent;
+    white-space: nowrap;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-wireless-head-state.enabled {
+    color: #17d466;
+    background: #0f2a1d;
+    border-color: #1f7a4a;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-wireless-head-state.disabled {
+    color: #9fbbe0;
+    background: #1a2431;
+    border-color: #2a3b52;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-wireless-head-left .ns-wireless-state-icon {
+    width: 30px;
+    height: 30px;
+    flex: 0 0 30px;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 1200px) {
+    body[data-page="admin-ad-network-inf-setting"] .ns-wireless-extra {
+        grid-template-columns: 1fr;
+    }
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-panel-bottom {
+    flex: 1 1 auto;
+    min-height: 220px;
+    border: none;
+    border-radius: 8px;
+    background: var(--ad-bg-panel);
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-panel-title {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.3;
+    padding: 2px 0 0;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-panel-detail-body {
+    flex: 1 1 auto;
+    min-height: 120px;
+    border: none;
+    border-radius: 8px;
+    background: transparent;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-port-detail-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: transparent;
+    color: var(--ad-text-primary);
+    font-size: 14px;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-port-detail-table th,
+body[data-page="admin-ad-network-inf-setting"] .ns-port-detail-table td {
+    border: 1px solid #2a3b52;
+    padding: 12px 12px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-port-detail-table thead th {
+    background: #1d2026;
+    color: #cfe6ff;
+    font-weight: 600;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-port-detail-table tbody tr:nth-child(odd) {
+    background: #1b2028;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-port-detail-table tbody tr:nth-child(even) {
+    background: #171c24;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-port-detail-table td.k {
+    width: 30%;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-port-detail-table td.v {
+    color: var(--ad-text-primary);
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-port-detail-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #dbe8ff;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-port-detail-row .k {
+    min-width: 56px;
+    color: #9fbbe0;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-modal-hd,
+body[data-page="admin-ad-network-inf-setting"] .ns-modal-ft {
+    border: 0 !important;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-btn.solid {
+    background: var(--ad-accent) !important;
+    border-color: var(--ad-accent) !important;
+    color: #fff !important;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-btn.danger {
+    border: 1px solid #ec4343;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-table {
+    flex: 1 1 auto;
+    min-height: 260px;
+    color: #9fbbe0;
+    display: block !important;
+    place-items: initial !important;
+    padding: 0 !important;
+    background: var(--ad-bg-panel);
+    border: none;
+    overflow: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--ad-border) var(--ad-scroll-track);
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-wireless-summary-table-wrap {
+    flex: 0 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid var(--ad-border);
+    border-radius: 8px;
+    background: var(--ad-bg-panel);
+    overflow: hidden;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-wireless-summary-table {
+    table-layout: fixed;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-wireless-summary-table thead th {
+    position: static !important;
+    top: auto !important;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-data-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    table-layout: fixed;
+    font-size: 13px;
+    color: var(--ad-text-primary);
+    background: var(--ad-bg-panel);
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-ops {
+    display: inline-flex;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-footer .ns-page-btn {
+    min-width: 36px;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 999px;
+    font-size: 12px;
+    line-height: 1;
+    border: 1px solid transparent;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-badge.badge-up {
+    color: #17d466;
+    background: #0f2a1d;
+    border-color: #1f7a4a;
+    display: inline-block;
+    min-width: 90px;
+    text-align: center;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-badge.badge-down {
+    color: #ff5a5a;
+    background: #2a1414;
+    border-color: #7a2a2a;
+    display: inline-block;
+    min-width: 90px;
+    text-align: center;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-data-table thead th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: #24272e;
+    border: 0px solid var(--ad-border);
+    padding: 10px 12px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-data-table tbody td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #212a36;
+    vertical-align: middle;
+    color: #e9e9ea;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-data-table tbody tr:nth-child(odd) {
+    background: var(--ad-bg-panel);
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-data-table tbody tr:nth-child(even) {
+    background: var(--ad-bg-card);
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-table::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-table::-webkit-scrollbar-track {
+    background: var(--ad-scroll-track);
+    border-left: 1px solid #202733;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-table::-webkit-scrollbar-thumb {
+    background: var(--ad-border);
+    border-radius: 8px;
+}
+
+body[data-page="admin-ad-network-inf-setting"] .ns-table::-webkit-scrollbar-thumb:hover {
+    background: var(--ad-scroll-thumb-hover);
+}
+
+.pager-modern {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    background: var(--cbi-section-bg, #1b1e24);
+    border-top: 1px solid var(--cbi-section-border, #333);
+    padding: 8px 12px;
+    position: sticky;
+    bottom: 0;
+    z-index: 5;
+}
+
+.pm-left,
+.pm-center,
+.pm-right {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px
+}
+
+.pm-center {
+    flex-wrap: wrap
+}
+
+.pm-right select {
+    min-width: 72px;
+    width: auto
+}
+
+.pm-right label {
+    white-space: nowrap
+}
+
+.pm-btn {
+    min-width: 28px;
+    height: 26px;
+    padding: 0 8px;
+    border-radius: 6px;
+    border: 1px solid #444;
+    background: #2a2d34;
+    color: #e0e0e0;
+    cursor: pointer
+}
+
+.pm-btn:hover {
+    background: #343842
+}
+
+.pm-btn.active {
+    background: #3f6ab8;
+    border-color: #3f6ab8;
+    color: #fff
+}
+
+.pm-btn[disabled] {
+    opacity: .45;
+    cursor: not-allowed
+}
+
+.pm-ellipsis {
+    padding: 0 6px;
+    opacity: .7
+}
+
+.pager-modern.hidden {
+    display: none
+}
+
+.pager-modern .pm-ellipsis {
+    color: #aab6c1 !important;
+    padding: 0 6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    letter-spacing: 1px;
+}

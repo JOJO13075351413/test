@@ -1,0 +1,26 @@
+<%# LuCI Bootstrap footer – close tags opened in header %>
+	  <!-- div id="view"></div -->
+        </div><!-- /#maincontent -->
+      </div><!-- /.content -->
+    </main>
+  </div><!-- /.app-body -->
+
+  <footer></footer>
+
+  <div id="modal_overlay"></div>
+  <div class="cbi-tooltip"></div>
+
+  <script>
+    (function () {
+      if (window.L && L.require) {
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', function(){ L.require('menu-bootstrap'); });
+        } else {
+          L.require('menu-bootstrap');
+        }
+      }
+    })();
+  </script>
+
+</body>
+</html>
