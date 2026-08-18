@@ -156,10 +156,10 @@ return view.extend({
                 maxLengths: [3, 3, 3, 3, 2],
                 className: 'ns-general-ip-slot',
                 styleVars: {
-                    '--adui-msi-bg': '#0f141d',
-                    '--adui-msi-border': '#2b3440',
-                    '--adui-msi-text': '#e6f0ff',
-                    '--adui-msi-sep': '#9fb3d1'
+                    '--adui-msi-bg': '#ffffff',
+                    '--adui-msi-border': '#e9dfd5',
+                    '--adui-msi-text': '#3d434c',
+                    '--adui-msi-sep': '#968a80'
                 }
             });
             var generalIpTip = E('span', { 'class': 'ns-w24-input-msg' });
@@ -1054,12 +1054,12 @@ return view.extend({
                     placeholder: _('请选择'),
                     styleVars: {
                         '--adui-ss-min-width': minWidth || '220px',
-                        '--adui-ss-arrow-color': '#7f93b3',
-                        '--adui-ss-placeholder': '#7f93b3',
-                        '--adui-ss-menu-border': '#2a3b52',
-                        '--adui-ss-menu-bg': '#151b24',
-                        '--adui-ss-menu-text': '#dbe8ff',
-                        '--adui-ss-menu-hover-bg': '#20334a'
+                        '--adui-ss-arrow-color': '#968a80',
+                        '--adui-ss-placeholder': '#968a80',
+                        '--adui-ss-menu-border': '#e9dfd5',
+                        '--adui-ss-menu-bg': '#ffffff',
+                        '--adui-ss-menu-text': '#3d434c',
+                        '--adui-ss-menu-hover-bg': '#fff4ec'
                     }
                 });
                 if (track !== false) {
@@ -1194,10 +1194,10 @@ return view.extend({
                     value: value || '',
                     className: 'ns-w24-mac-slot',
                     styleVars: {
-                        '--adui-msi-bg': '#0f141d',
-                        '--adui-msi-border': '#2b3440',
-                        '--adui-msi-text': '#e6f0ff',
-                        '--adui-msi-sep': '#9fb3d1'
+                        '--adui-msi-bg': '#ffffff',
+                        '--adui-msi-border': '#e9dfd5',
+                        '--adui-msi-text': '#3d434c',
+                        '--adui-msi-sep': '#968a80'
                     }
                 });
             }
@@ -1214,10 +1214,10 @@ return view.extend({
                     value: value || '',
                     className: 'ns-w24-mac-slot',
                     styleVars: {
-                        '--adui-msi-bg': '#0f141d',
-                        '--adui-msi-border': '#2b3440',
-                        '--adui-msi-text': '#e6f0ff',
-                        '--adui-msi-sep': '#9fb3d1'
+                        '--adui-msi-bg': '#ffffff',
+                        '--adui-msi-border': '#e9dfd5',
+                        '--adui-msi-text': '#3d434c',
+                        '--adui-msi-sep': '#968a80'
                     }
                 });
             }
@@ -2530,12 +2530,12 @@ return view.extend({
                     placeholder: _('请选择'),
                     styleVars: {
                         '--adui-ss-min-width': minWidth || '420px',
-                        '--adui-ss-arrow-color': '#7f93b3',
-                        '--adui-ss-placeholder': '#7f93b3',
-                        '--adui-ss-menu-border': '#2a3b52',
-                        '--adui-ss-menu-bg': '#151b24',
-                        '--adui-ss-menu-text': '#dbe8ff',
-                        '--adui-ss-menu-hover-bg': '#20334a'
+                        '--adui-ss-arrow-color': '#968a80',
+                        '--adui-ss-placeholder': '#968a80',
+                        '--adui-ss-menu-border': '#e9dfd5',
+                        '--adui-ss-menu-bg': '#ffffff',
+                        '--adui-ss-menu-text': '#3d434c',
+                        '--adui-ss-menu-hover-bg': '#fff4ec'
                     }
                 });
             }
@@ -3003,12 +3003,12 @@ return view.extend({
                     placeholder: _('请选择'),
                     styleVars: {
                         '--adui-ss-min-width': minWidth || '220px',
-                        '--adui-ss-arrow-color': '#7f93b3',
-                        '--adui-ss-placeholder': '#7f93b3',
-                        '--adui-ss-menu-border': '#2a3b52',
-                        '--adui-ss-menu-bg': '#151b24',
-                        '--adui-ss-menu-text': '#dbe8ff',
-                        '--adui-ss-menu-hover-bg': '#20334a'
+                        '--adui-ss-arrow-color': '#968a80',
+                        '--adui-ss-placeholder': '#968a80',
+                        '--adui-ss-menu-border': '#e9dfd5',
+                        '--adui-ss-menu-bg': '#ffffff',
+                        '--adui-ss-menu-text': '#3d434c',
+                        '--adui-ss-menu-hover-bg': '#fff4ec'
                     }
                 });
                 fields.push({ kind: 'select', api: sel });

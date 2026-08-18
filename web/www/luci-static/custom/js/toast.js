@@ -31,8 +31,8 @@
                 opacity: 0;
                 pointer-events: none;
                 background: #fff;
-                color: #121419;
-                border: 1px solid #232c35;
+                color: #2e333b;
+                border: 1px solid #e9dfd5;
                 border-radius: 10px;
                 padding: 10px 16px;
                 display: inline-flex;

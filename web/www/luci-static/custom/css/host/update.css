@@ -1,5 +1,5 @@
 body[data-page="admin-ad-host-update"] .content {
-    background: #12141a !important;
+    background: #f4efe9 !important;
     padding: 0 !important;
     display: flex;
     flex-direction: column;
@@ -46,21 +46,21 @@ body[data-page="admin-ad-host-update"] .ns-card {
     width: 100%;
     box-sizing: border-box;
     padding: 12px;
-    background: #1d2026;
+    background: #ffffff;
     border-radius: 8px;
 }
 
 body[data-page="admin-ad-host-update"] .ns-subtabs {
     display: flex;
-    border-bottom: 1px solid #2a3b52;
+    border-bottom: 1px solid #e9dfd5;
 }
 
 body[data-page="admin-ad-host-update"] .ns-subtab {
     background: transparent !important;
-    color: #9fbbe0;
+    color: #8b7b6e;
     padding: 8px 14px;
     border: 0;
-    border-bottom: 3px solid #2a3b52;
+    border-bottom: 3px solid #e9dfd5;
     border-radius: 0 !important;
     transition: color .15s, border-color .15s, border-bottom-width .15s;
     cursor: pointer;
@@ -68,13 +68,13 @@ body[data-page="admin-ad-host-update"] .ns-subtab {
 }
 
 body[data-page="admin-ad-host-update"] .ns-subtab:hover {
-    color: #cfe6ff;
-    border-bottom-color: #3f5f8a;
+    color: #3d434c;
+    border-bottom-color: #f4bc97;
 }
 
 body[data-page="admin-ad-host-update"] .ns-subtab.active {
     color: #fff;
-    border-bottom-color: #2b77ff;
+    border-bottom-color: #ed741d;
     border-bottom-width: 3px;
     font-weight: 600;
 }
@@ -84,7 +84,7 @@ body[data-page="admin-ad-host-update"] .ns-filter {
     grid-template-columns: 1fr auto;
     gap: 12px;
     align-items: center;
-    background: #1d2026;
+    background: #ffffff;
     border-radius: 6px;
 }
 
@@ -105,10 +105,10 @@ body[data-page="admin-ad-host-update"] .ns-input {
     width: 200px;
     height: 32px;
     padding: 0 10px;
-    background: #0f141d;
-    border: 1px solid #2a3b52;
+    background: #ffffff;
+    border: 1px solid #e9dfd5;
     border-radius: 6px;
-    color: #e6f0ff;
+    color: #3d434c;
 }
 
 body[data-page="admin-ad-host-update"] .ns-select {
@@ -116,9 +116,9 @@ body[data-page="admin-ad-host-update"] .ns-select {
     padding: 0 8px;
     min-width: 60px;
     max-width: 100px;
-    background: #0f141d;
-    border: 1px solid #2a3b52;
-    color: #cfe6ff;
+    background: #ffffff;
+    border: 1px solid #e9dfd5;
+    color: #3d434c;
     border-radius: 6px;
 }
 
@@ -126,9 +126,9 @@ body[data-page="admin-ad-host-update"] .ns-btn {
     height: 32px;
     padding: 0 12px;
     border-radius: 6px;
-    border: 1px solid #2d4b6a;
-    background: #20334a;
-    color: #cfe6ff;
+    border: 1px solid #f2ac80;
+    background: #fff4ec;
+    color: #3d434c;
     cursor: pointer;
 }
 
@@ -139,8 +139,8 @@ body[data-page="admin-ad-host-update"] .ns-btn.ns-btn-disabled {
 }
 
 body[data-page="admin-ad-host-update"] .ns-btn.primary {
-    background: #2b77ff;
-    border-color: #2b77ff;
+    background: #ed741d;
+    border-color: #ed741d;
     color: #fff;
 }
 
@@ -157,9 +157,9 @@ body[data-page="admin-ad-host-update"] .ns-btn:hover {
 body[data-page="admin-ad-host-update"] .ns-icon-btn {
     width: 32px;
     height: 32px;
-    border: 1px solid #2a3b52;
+    border: 1px solid #e9dfd5;
     border-radius: 6px;
-    background: #0f141d center/18px 18px no-repeat url('/luci-static/custom/img/refresh.svg');
+    background: #ffffff center/18px 18px no-repeat url('/luci-static/custom/img/refresh.svg');
     cursor: pointer;
 }
 
@@ -169,9 +169,9 @@ body[data-page="admin-ad-host-update"] .ns-table {
     overflow: auto;
     display: block;
     padding: 0;
-    background: #1d2026;
+    background: #ffffff;
     scrollbar-width: thin;
-    scrollbar-color: #2a3b52 #14181f;
+    scrollbar-color: #e9dfd5 #f0e9e1;
 }
 
 body[data-page="admin-ad-host-update"] .ns-table::-webkit-scrollbar {
@@ -180,17 +180,17 @@ body[data-page="admin-ad-host-update"] .ns-table::-webkit-scrollbar {
 }
 
 body[data-page="admin-ad-host-update"] .ns-table::-webkit-scrollbar-track {
-    background: #14181f;
-    border-left: 1px solid #202733;
+    background: #f0e9e1;
+    border-left: 1px solid #e9dfd5;
 }
 
 body[data-page="admin-ad-host-update"] .ns-table::-webkit-scrollbar-thumb {
-    background: #2a3b52;
+    background: #e9dfd5;
     border-radius: 8px;
 }
 
 body[data-page="admin-ad-host-update"] .ns-table::-webkit-scrollbar-thumb:hover {
-    background: #355172;
+    background: #f4bc97;
 }
 
 body[data-page="admin-ad-host-update"] .ns-data-table {
@@ -198,15 +198,15 @@ body[data-page="admin-ad-host-update"] .ns-data-table {
     border-collapse: separate;
     border-spacing: 0;
     font-size: 13px;
-    color: #cfe6ff;
-    background: #1d2026;
+    color: #3d434c;
+    background: #ffffff;
 }
 
 body[data-page="admin-ad-host-update"] .ns-data-table thead th {
     position: sticky;
     top: 0;
     z-index: 1;
-    background: #24272e;
+    background: #f6f1eb;
     padding: 10px 12px;
     text-align: left;
     white-space: nowrap;
@@ -226,16 +226,16 @@ body[data-page="admin-ad-host-update"] .ns-data-table thead th.th-checkbox input
 
 body[data-page="admin-ad-host-update"] .ns-data-table tbody td {
     padding: 10px 12px;
-    border-bottom: 1px solid #212a36;
+    border-bottom: 1px solid #e9dfd5;
     vertical-align: middle;
 }
 
 body[data-page="admin-ad-host-update"] .ns-data-table tbody tr:nth-child(odd) {
-    background: #1d2026;
+    background: #ffffff;
 }
 
 body[data-page="admin-ad-host-update"] .ns-data-table tbody tr:nth-child(even) {
-    background: #21242b;
+    background: #faf6f1;
 }
 
 body[data-page="admin-ad-host-update"] .ns-footer {
@@ -247,7 +247,7 @@ body[data-page="admin-ad-host-update"] .ns-footer {
 }
 
 body[data-page="admin-ad-host-update"] .ns-pag-info {
-    color: #cfe6ff;
+    color: #3d434c;
     font-size: 13px;
 }
 
@@ -263,19 +263,19 @@ body[data-page="admin-ad-host-update"] .pm-btn {
     height: 26px;
     padding: 0 8px;
     border-radius: 6px;
-    border: 1px solid #444;
-    background: #2a2d34;
-    color: #e0e0e0;
+    border: 1px solid #d9cfc5;
+    background: #f1ece5;
+    color: #4b545f;
     cursor: pointer;
 }
 
 body[data-page="admin-ad-host-update"] .pm-btn:hover {
-    background: #343842;
+    background: #eae3da;
 }
 
 body[data-page="admin-ad-host-update"] .pm-btn.active {
-    background: #3f6ab8;
-    border-color: #3f6ab8;
+    background: #ed741d;
+    border-color: #ed741d;
     color: #fff;
 }
 
@@ -287,14 +287,14 @@ body[data-page="admin-ad-host-update"] .pm-btn[disabled] {
 body[data-page="admin-ad-host-update"] .pm-ellipsis {
     padding: 0 6px;
     opacity: .7;
-    color: #aab6c1;
+    color: #968a80;
 }
 
 body[data-page="admin-ad-host-update"] .ns-pag-size {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    color: #cfe6ff;
+    color: #3d434c;
 }
 
 body[data-page="admin-ad-host-update"] .ns-select#pageSizeSel {
@@ -316,7 +316,7 @@ body[data-page="admin-ad-host-update"] .ns-select#pageSizeSel {
 .ns-label {
     width: 80px;
     text-align: right;
-    color: #cfe6ff;
+    color: #3d434c;
     opacity: .9;
     white-space: nowrap;
 }
@@ -355,7 +355,7 @@ body[data-page="admin-ad-host-update"] .ns-select#pageSizeSel {
 .um-inline-upload {
     margin: 8px 8px 0;
     padding: 10px;
-    border: 1px dashed #2a3b52;
+    border: 1px dashed #e9dfd5;
     border-radius: 8px;
     background: rgba(15, 20, 29, 0.6);
     display: none;
@@ -386,8 +386,8 @@ body[data-page="admin-ad-host-update"] .ns-select#pageSizeSel {
 .um-inline-modal .modal-body,
 .um-inline-modal .modal-content>.cbi-section,
 .um-inline-modal .ui-dialog-content>* {
-    background: #111722 !important;
-    border: 1px solid #2a3b52 !important;
+    background: #ffffff !important;
+    border: 1px solid #e9dfd5 !important;
     border-radius: 8px !important;
     padding: 12px !important;
 }
@@ -411,15 +411,15 @@ body[data-page="admin-ad-host-update"] .ns-select#pageSizeSel {
 .um-inline-upload {
     margin: 8px 8px 0;
     padding: 10px;
-    border: 1px dashed #2a3b52;
+    border: 1px dashed #e9dfd5;
     border-radius: 8px;
     background: rgba(15, 20, 29, 0.6);
     display: none;
 }
 
 .um-inline-card {
-    background: #111722;
-    border: 1px solid #2a3b52;
+    background: #ffffff;
+    border: 1px solid #e9dfd5;
     border-radius: 8px;
     padding: 12px;
     width: 100%;
@@ -456,7 +456,7 @@ body[data-page="admin-ad-host-update"] .ns-select#pageSizeSel {
 .um-inline-upload {
     margin: 8px 8px 0;
     padding: 10px;
-    border: 1px dashed #2a3b52;
+    border: 1px dashed #e9dfd5;
     border-radius: 8px;
     background: rgba(15, 20, 29, 0.6);
     display: none;
@@ -477,8 +477,8 @@ body[data-page="admin-ad-host-update"] .ns-select#pageSizeSel {
 }
 
 .um-inline-upload .um-inline-modal>* {
-    background: #111722 !important;
-    border: 1px solid #2a3b52 !important;
+    background: #ffffff !important;
+    border: 1px solid #e9dfd5 !important;
     border-radius: 8px !important;
     padding: 12px !important;
 }
@@ -507,8 +507,8 @@ body[data-page="admin-ad-host-update"] .ns-select#pageSizeSel {
 
 .um-panel.um-panel-pop {
     width: min(680px, 92vw);
-    background: #1d2026;
-    border: 1px solid #2a3b52;
+    background: #ffffff;
+    border: 1px solid #e9dfd5;
     border-radius: 10px;
     box-shadow: 0 12px 28px rgba(0, 0, 0, .45);
     padding: 14px;
@@ -521,7 +521,7 @@ body[data-page="admin-ad-host-update"] .ns-select#pageSizeSel {
     left: 24px;
     border-width: 8px;
     border-style: solid;
-    border-color: transparent transparent #1d2026 transparent;
+    border-color: transparent transparent #ffffff transparent;
 }
 
 .um-title {
@@ -540,7 +540,7 @@ body[data-page="admin-ad-host-update"] .ns-select#pageSizeSel {
 .um-label {
     width: 108px;
     text-align: right;
-    color: #cfe6ff;
+    color: #3d434c;
     opacity: .9;
     white-space: nowrap
 }
@@ -564,10 +564,10 @@ body[data-page="admin-ad-host-update"] .ns-select#pageSizeSel {
 .um-select {
     height: 32px;
     padding: 0 10px;
-    background: #0f141d;
-    border: 1px solid #2a3b52;
+    background: #ffffff;
+    border: 1px solid #e9dfd5;
     border-radius: 6px;
-    color: #e6f0ff
+    color: #3d434c
 }
 
 .um-input {
@@ -589,9 +589,9 @@ body[data-page="admin-ad-host-update"] .ns-select#pageSizeSel {
     height: 32px;
     padding: 0 12px;
     border-radius: 6px;
-    border: 1px solid #2d4b6a;
-    background: #20334a;
-    color: #cfe6ff;
+    border: 1px solid #f2ac80;
+    background: #fff4ec;
+    color: #3d434c;
     cursor: pointer
 }
 
@@ -607,8 +607,8 @@ body[data-page="admin-ad-host-update"] .ns-select#pageSizeSel {
 
 .um-panel.um-panel-pop {
     width: min(680px, 92vw);
-    background: #1d2026;
-    border: 1px solid #2a3b52;
+    background: #ffffff;
+    border: 1px solid #e9dfd5;
     border-radius: 10px;
     box-shadow: 0 12px 28px rgba(0, 0, 0, .45);
     padding: 14px;
@@ -623,13 +623,13 @@ body[data-page="admin-ad-host-update"] .ns-select#pageSizeSel {
     transform: translateX(-50%);
     border-width: 8px;
     border-style: solid;
-    border-color: transparent transparent #1d2026 transparent;
+    border-color: transparent transparent #ffffff transparent;
 }
 
 .um-panel.um-panel-pop.is-flip::before {
     top: auto;
     bottom: -8px;
-    border-color: #1d2026 transparent transparent transparent;
+    border-color: #ffffff transparent transparent transparent;
 }
 
 .um-title {
@@ -648,7 +648,7 @@ body[data-page="admin-ad-host-update"] .ns-select#pageSizeSel {
 .um-label {
     width: 108px;
     text-align: right;
-    color: #cfe6ff;
+    color: #3d434c;
     opacity: .9;
     white-space: nowrap
 }
@@ -657,10 +657,10 @@ body[data-page="admin-ad-host-update"] .ns-select#pageSizeSel {
 .um-select {
     height: 32px;
     padding: 0 10px;
-    background: #0f141d;
-    border: 1px solid #2a3b52;
+    background: #ffffff;
+    border: 1px solid #e9dfd5;
     border-radius: 6px;
-    color: #e6f0ff
+    color: #3d434c
 }
 
 .um-input {
@@ -682,9 +682,9 @@ body[data-page="admin-ad-host-update"] .ns-select#pageSizeSel {
     height: 32px;
     padding: 0 12px;
     border-radius: 6px;
-    border: 1px solid #2d4b6a;
-    background: #20334a;
-    color: #cfe6ff;
+    border: 1px solid #f2ac80;
+    background: #fff4ec;
+    color: #3d434c;
     cursor: pointer
 }
 
@@ -705,8 +705,8 @@ body[data-page="admin-ad-host-update"] .ns-select#pageSizeSel {
     width: min(680px, 92vw);
     max-height: min(80vh, 720px);
     overflow: auto;
-    background: #1d2026;
-    border: 1px solid #2a3b52;
+    background: #ffffff;
+    border: 1px solid #e9dfd5;
     border-radius: 10px;
     box-shadow: 0 12px 28px rgba(0, 0, 0, .45);
     padding: 14px;
@@ -729,7 +729,7 @@ body[data-page="admin-ad-host-update"] .ns-select#pageSizeSel {
 
 body[data-page="admin-ad-host-update"] .ns-icon-btn {
     position: relative;
-    background-color: #0f141d;
+    background-color: #ffffff;
     background-image: none !important;
     transition: transform .12s ease, filter .12s ease, box-shadow .12s ease;
 }
@@ -779,15 +779,15 @@ body[data-page="admin-ad-host-update"] .ns-icon-btn.spin1::before {
 input[readonly],
 select[readonly],
 textarea[readonly] {
-    border-color: #2a3b52;
+    border-color: #e9dfd5;
 }
 
 .um-panel.um-panel-pop {
     width: min(680px, 92vw);
     max-height: min(80vh, 720px);
     overflow: auto;
-    background: #1d2026;
-    border: 1px solid #2a3b52;
+    background: #ffffff;
+    border: 1px solid #e9dfd5;
     border-radius: 10px;
     box-shadow: 0 12px 28px rgba(0, 0, 0, .45);
     padding: 14px;
@@ -823,8 +823,8 @@ textarea[readonly] {
 
 .um-panel {
     width: min(430px, 92vw);
-    background: #1d2026;
-    border: 1px solid #2a3b52;
+    background: #ffffff;
+    border: 1px solid #e9dfd5;
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, .4);
     padding: 14px
@@ -857,7 +857,7 @@ textarea[readonly] {
 .um-label {
     width: 108px;
     text-align: right;
-    color: #cfe6ff;
+    color: #3d434c;
     opacity: .9;
     white-space: nowrap
 }
@@ -866,10 +866,10 @@ textarea[readonly] {
 .um-select {
     height: 32px;
     padding: 0 10px;
-    background: #0f141d;
-    border: 1px solid #2a3b52;
+    background: #ffffff;
+    border: 1px solid #e9dfd5;
     border-radius: 6px;
-    color: #e6f0ff
+    color: #3d434c
 }
 
 .um-input {
@@ -896,15 +896,15 @@ textarea[readonly] {
     height: 32px;
     padding: 0 12px;
     border-radius: 6px;
-    border: 1px solid #2d4b6a;
-    background: #20334a;
-    color: #cfe6ff;
+    border: 1px solid #f2ac80;
+    background: #fff4ec;
+    color: #3d434c;
     cursor: pointer
 }
 
 .um-btn.primary {
-    background: #2b77ff;
-    border-color: #2b77ff;
+    background: #ed741d;
+    border-color: #ed741d;
     color: #fff;
     width: 100px;
 }
@@ -915,22 +915,22 @@ textarea[readonly] {
 
 .modal {
     width: min(500px, 92vw);
-    background: #1d2026;
+    background: #ffffff;
     border-radius: 10px;
-    border: 1px solid #2a3b52;
+    border: 1px solid #e9dfd5;
     box-shadow: 0 10px 30px rgba(0, 0, 0, .4);
     padding: 14px;
-    color: #e8eef6;
+    color: #2e333b;
 }
 
 .modal h4 {
-    color: #e8eef6 !important;
+    color: #2e333b !important;
 }
 
 .modal button.btn {
-    background: #1a1f27;
-    color: #dce6ff;
-    border: 1px solid #2d4b6a;
+    background: #ffffff;
+    color: #4b545f;
+    border: 1px solid #f2ac80;
     cursor: pointer;
     padding: 0 12px;
     border-radius: 6px;
@@ -946,15 +946,15 @@ button.btn.cbi-button-action.important {
 }
 
 .modal li {
-    color: #e8eef6;
+    color: #2e333b;
 }
 
 button.ns-pause {
     width: 32px;
     height: 32px;
-    border: 1px solid #2a3b52;
+    border: 1px solid #e9dfd5;
     border-radius: 6px;
-    background-color: #0f141d;
+    background-color: #ffffff;
     cursor: pointer;
     align-items: center;
     justify-content: center;
@@ -1002,7 +1002,7 @@ body[data-page="admin-ad-host-update"] .ns-ustat-bar {
     width: 70%;
     border-radius: 999px;
     overflow: hidden;
-    background: rgba(255, 255, 255, 0.12);
+    background: rgba(237, 116, 29, 0.15);
 }
 
 body[data-page="admin-ad-host-update"] .ns-ustat-bar-inner {
@@ -1191,15 +1191,15 @@ body[data-page="admin-ad-host-update"] .ns-status {
 }
 
 body[data-page="admin-ad-host-update"] .ns-status-idle {
-    color: #9fbbe0;
-    background: rgba(159, 187, 224, 0.12);
-    border-color: rgba(159, 187, 224, 0.22);
+    color: #8b7b6e;
+    background: rgba(237, 116, 29, 0.12);
+    border-color: rgba(237, 116, 29, 0.22);
 }
 
 body[data-page="admin-ad-host-update"] .ns-status-downloading {
-    color: #7bb5ff;
-    background: rgba(43, 119, 255, 0.14);
-    border-color: rgba(43, 119, 255, 0.25);
+    color: #f0a87d;
+    background: rgba(237, 116, 29, 0.14);
+    border-color: rgba(237, 116, 29, 0.25);
 }
 
 body[data-page="admin-ad-host-update"] .ns-status-verifying {
@@ -1215,9 +1215,9 @@ body[data-page="admin-ad-host-update"] .ns-status-upgrading {
 }
 
 body[data-page="admin-ad-host-update"] .ns-status-done {
-    color: #4da3ff;
-    background: rgba(77, 163, 255, 0.14);
-    border-color: rgba(77, 163, 255, 0.25);
+    color: #ed741d;
+    background: rgba(237, 116, 29, 0.14);
+    border-color: rgba(237, 116, 29, 0.25);
 }
 
 body[data-page="admin-ad-host-update"] .ns-status-unknown {

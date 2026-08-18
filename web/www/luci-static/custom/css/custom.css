@@ -27,22 +27,22 @@
     --gap: 16px;
     --sidenav-w: 200px;
 
-    --bg-app: #12141a;
-    --bg-header: #12141a;
-    --bg-card: #111827;
+    --bg-app: #f4efe9;
+    --bg-header: #ed741d;
+    --bg-card: #ffffff;
     --bg-content: #ffffff;
 
-    --fg-1: #e5e7eb;
-    --fg-2: #cbd5e1;
-    --fg-font: #e9e9ea;
+    --fg-1: #3a4048;
+    --fg-2: #8b7b6e;
+    --fg-font: #3a4048;
 
-    --hover: rgba(255, 255, 255, .06);
-    --active: rgba(255, 255, 255, .12);
-    --border: 1px solid rgba(255, 255, 255, .06);
+    --hover: rgba(237, 116, 29, .06);
+    --active: rgba(237, 116, 29, .12);
+    --border: 1px solid rgba(237, 116, 29, .15);
 
-    --accent: #1890ff;
-    --accent-weak: rgba(59, 130, 246, .15);
-    --accent-strong: #2563eb;
+    --accent: #ed741d;
+    --accent-weak: rgba(237, 116, 29, .15);
+    --accent-strong: #d9680f;
 }
 html,
 body {
@@ -118,7 +118,7 @@ body {
 
 .sidenav .scroll {
     scrollbar-width: thin;
-    scrollbar-color: #444 #FFFFFF;
+    scrollbar-color: #d9cfc5 #FFFFFF;
 }
 
 .sidenav .scroll::-webkit-scrollbar {
@@ -127,17 +127,17 @@ body {
 }
 
 .sidenav .scroll::-webkit-scrollbar-track {
-    background: #111;
+    background: #e9dfd5;
 }
 
 .sidenav .scroll::-webkit-scrollbar-thumb {
-    background-color: #444;
+    background-color: #d9cfc5;
     border-radius: 4px;
 
 }
 
 .sidenav .scroll::-webkit-scrollbar-thumb:hover {
-    background-color: #666;
+    background-color: #9a8f85;
 }
 
 #topmenu {
@@ -257,7 +257,7 @@ aside.sidenav .nav a {
 }
 
 aside.card.sidenav {
-    background: #FFFFFF;
+    background: #ed741d;
     color: #FFFFFF;
 }
 
@@ -541,9 +541,9 @@ a.menu:after {
 .cpw-dialog {
     width: 420px;
     max-width: 92vw;
-    background: #FFFFFF;
+    background: #ed741d;
     color: #000000;
-    border: 1px solid rgba(255, 255, 255, .08);
+    border: 1px solid rgba(237, 116, 29, .12);
     border-radius: 14px;
     box-shadow: 0 22px 48px rgba(0, 0, 0, .55), 0 6px 16px rgba(0, 0, 0, .35);
     padding: 14px;
@@ -553,7 +553,7 @@ a.menu:after {
     font-size: 16px;
     font-weight: 800;
     padding: 6px 4px 10px 4px;
-    border-bottom: 1px solid rgba(255, 255, 255, .06);
+    border-bottom: 1px solid rgba(237, 116, 29, .09);
     margin-bottom: 10px;
 }
 
@@ -566,14 +566,14 @@ a.menu:after {
 
 .cpw-label {
     flex: 0 0 92px;
-    color: #cbd5e1;
+    color: #6f675f;
     font-size: 13px;
 }
 
 .cpw-value {
     flex: 1 1 auto;
     font-weight: 700;
-    color: #fff;
+    color: #2e333b;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -589,16 +589,16 @@ a.menu:after {
     box-sizing: border-box;
     padding: 10px 40px 10px 12px;
     border-radius: 10px;
-    border: 1px solid #3a3a3a;
-    background: #151922;
-    color: #FFFFFF;
+    border: 1px solid #e9dfd5;
+    background: #faf6f1;
+    color: #3a4048;
     font-size: 14px;
     outline: none;
 }
 
 .cpw-input:focus {
-    border-color: rgba(61, 139, 255, .75);
-    box-shadow: 0 0 0 3px rgba(61, 139, 255, .25);
+    border-color: rgba(237, 116, 29, .75);
+    box-shadow: 0 0 0 3px rgba(237, 116, 29, .25);
 }
 
 .cpw-eye {
@@ -619,16 +619,16 @@ a.menu:after {
     gap: 10px;
     margin-top: 4px;
     padding-top: 10px;
-    border-top: 1px solid rgba(255, 255, 255, .06);
+    border-top: 1px solid rgba(237, 116, 29, .09);
 }
 
 .cpw-btn {
     min-width: 92px;
     height: 34px;
     border-radius: 10px;
-    border: 1px solid #3a3a3a;
-    background: #212531;
-    color: #FFFFFF;
+    border: 1px solid #e9dfd5;
+    background: #f1ece5;
+    color: #3a4048;
     cursor: pointer;
 }
 
@@ -642,8 +642,8 @@ a.menu:after {
 }
 
 .cpw-btn-primary {
-    border-color: #466af5;
-    background: linear-gradient(180deg, #5a86ff, #3d6dff);
+    border-color: #ed741d;
+    background: linear-gradient(180deg, #ed741d, #ed741d);
     color: #fff;
 }
 
@@ -665,8 +665,8 @@ a.menu:after {
     z-index: 3000;
     margin-top: 6px;
     min-width: 120px;
-    background: #FFFFFF;
-    border: 1px solid #374151;
+    background: #ed741d;
+    border: 1px solid #e9dfd5;
     border-radius: 10px;
     padding: 6px 0;
     box-shadow: 0 10px 24px rgba(0, 0, 0, .35);
@@ -684,13 +684,13 @@ a.menu:after {
     align-items: center;
     gap: 8px;
     padding: 8px 14px;
-    color: #FFFFFF;
+    color: #3a4048;
     text-decoration: none;
     white-space: nowrap;
 }
 
 #modemenu>li.dropdown-manual>ul.dropdown-menu>li>a:hover {
-    background: #FFFFFF;
+    background: #ed741d;
     color: #fff;
     border-radius: 8px;
 }
@@ -730,7 +730,7 @@ a.menu:after {
 }
 
 .cpw-hint.strong .level {
-    color: #60a5fa;
+    color: #f0a87d;
 }
 
 .cpw-row-hint {
@@ -759,10 +759,10 @@ a.menu:after {
     height: 36px;
     padding: 6px 6px;
     border-radius: 10px;
-    background: #2a1a1a;
+    background: #fff3ec;
     border: 1px solid rgba(239, 68, 68, .45);
     box-shadow: 0 10px 24px rgba(0, 0, 0, .35);
-    color: #fde68a;
+    color: #ffe1b8;
 }
 
 .ad-nopwd-bar .msg {
@@ -786,8 +786,8 @@ a.menu:after {
     height: 26px;
     padding: 0px 10px;
     border-radius: 8px;
-    border: 1px solid #4b5563;
-    background: #111827;
+    border: 1px solid #e1d6cc;
+    background: #ed741d;
     color: #FFFFFF;
     cursor: pointer;
     font-size: 13px;
@@ -795,8 +795,8 @@ a.menu:after {
 }
 
 .ad-nopwd-btn.primary {
-    border-color: #466af5;
-    background: linear-gradient(180deg, #5a86ff, #3d6dff);
+    border-color: #ed741d;
+    background: linear-gradient(180deg, #ed741d, #ed741d);
     color: #fff;
 }
 
@@ -804,11 +804,11 @@ a.menu:after {
     display: flex;
     align-items: center;
     border-radius: 16px;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .05), 0 4px 14px rgba(0, 0, 0, .25);
+    box-shadow: inset 0 1px 0 rgba(237, 116, 29, .07), 0 4px 14px rgba(0, 0, 0, .25);
     color: #FFFFFF;
     padding: 10px 8px 10px 8px !important;
-    background: #FFFFFF;
-    border: 1px solid hsla(0, 0%, 100%, 0.08);
+    background: #ed741d;
+    border: 1px solid #e9dfd5;
     margin-bottom: 10px;
     position: relative;
     --pc-icon-w: 44px;
@@ -885,12 +885,12 @@ a.menu:after {
     gap: 8px;
     padding: 8px 12px;
     font-size: 14px;
-    color: #FFFFFF;
+    color: #3a4048;
     white-space: nowrap;
 }
 
 .product-card .pc-switch-menu li:hover {
-    background: rgba(255, 255, 255, .06);
+    background: rgba(237, 116, 29, .09);
     border-radius: 8px;
 }
 
@@ -908,8 +908,8 @@ a.menu:after {
     box-sizing: border-box;
     list-style: none;
     margin: 0;
-    background: #FFFFFF;
-    border: 1px solid hsla(0, 0%, 100%, 0.08);
+    background: #ed741d;
+    border: 1px solid #e9dfd5;
     border-radius: 10px;
     box-shadow: 0 10px 24px rgba(0, 0, 0, .45);
     z-index: 3000;
@@ -941,27 +941,27 @@ aside.sidenav .sidenav-scroll {
 }
 
 #modal_overlay .modal {
-    background: #FFFFFF;
+    background: #ed741d;
     border: none;
     box-shadow: none;
-    color: #eff0ff !important;
+    color: #2e333b !important;
 }
 
 #modal_overlay .modal h4 {
-    color: #eff0ff;
+    color: #2e333b;
 }
 
 #modal_overlay .modal .alert-message.warning {
     background: transparent;
-    color: #eff0ff;
+    color: #2e333b;
     border: none;
     box-shadow: none;
     padding: 0;
 }
 
 #modal_overlay .modal .right .btn.primary {
-    background: #FFFFff;
-    border-color: #2b77ff;
+    background: #ed741d;
+    border-color: #ed741d;
     color: #fff;
 }
 
@@ -981,10 +981,10 @@ body[data-page^="admin-ad"]:not([data-page^="admin-ad-security-firewall"]) #moda
 
 body[data-page^="admin-ad"] #modal_overlay .modal.ad-theme-modal,
 body[data-page^="admin-ad"] #modal_overlay .ui-modal.ad-theme-modal {
-    background: #FFFFFF !important;
-    color: #e8eef6 !important;
+    background: #ed741d !important;
+    color: #2e333b !important;
     border-radius: 10px !important;
-    border: 1px solid #2a3b52 !important;
+    border: 1px solid #e9dfd5 !important;
     box-shadow: 0 10px 30px rgba(0, 0, 0, .4) !important;
     padding: 14px !important;
     width: min(var(--ad-modal-width, 430px), 92vw) !important;
@@ -992,13 +992,13 @@ body[data-page^="admin-ad"] #modal_overlay .ui-modal.ad-theme-modal {
 
 body[data-page^="admin-ad"] #modal_overlay .modal.ad-theme-modal h4,
 body[data-page^="admin-ad"] #modal_overlay .ui-modal.ad-theme-modal h4 {
-    color: #e8eef6;
+    color: #2e333b;
 }
 
 body[data-page^="admin-ad"] #modal_overlay .modal.ad-theme-modal .modal-body,
 body[data-page^="admin-ad"] #modal_overlay .ui-modal.ad-theme-modal .modal-body {
     background: transparent !important;
-    color: #e8eef6 !important;
+    color: #2e333b !important;
     border: none !important;
     border-radius: 0 !important;
     padding: 0;
@@ -1015,9 +1015,9 @@ body[data-page^="admin-ad"] #modal_overlay .ui-modal.ad-theme-modal .right {
 
 body[data-page^="admin-ad"] #modal_overlay .modal.ad-theme-modal button.btn,
 body[data-page^="admin-ad"] #modal_overlay .ui-modal.ad-theme-modal button.btn {
-    background: #1a1f27;
-    color: #dce6ff;
-    border: 1px solid #2d4b6a;
+    background: #ed741d;
+    color: #4b545f;
+    border: 1px solid #f2ac80;
     cursor: pointer;
     padding: 0 12px;
     border-radius: 6px;
@@ -1030,8 +1030,8 @@ body[data-page^="admin-ad"] #modal_overlay .modal.ad-theme-modal button.btn.cbi-
 body[data-page^="admin-ad"] #modal_overlay .ui-modal.ad-theme-modal button.btn.cbi-button-action,
 body[data-page^="admin-ad"] #modal_overlay .modal.ad-theme-modal .right .btn.primary,
 body[data-page^="admin-ad"] #modal_overlay .ui-modal.ad-theme-modal .right .btn.primary {
-    background: #2b77ff;
-    border-color: #2b77ff;
+    background: #ed741d;
+    border-color: #ed741d;
     color: #fff;
 }
 
@@ -1063,9 +1063,9 @@ body[data-page^="admin-ad"] .ad-modal.is-hidden {
 
 body[data-page^="admin-ad"] .ad-modal-panel {
     width: min(var(--ad-modal-width, 500px), 92vw);
-    background: #FFFFFF !important;
-    color: #e8eef6 !important;
-    border: 1px solid #2a3b52 !important;
+    background: #ed741d !important;
+    color: #2e333b !important;
+    border: 1px solid #e9dfd5 !important;
     border-radius: 10px !important;
     box-shadow: 0 10px 30px rgba(0, 0, 0, .4) !important;
     display: flex;
@@ -1091,7 +1091,7 @@ body[data-page^="admin-ad"] .ad-modal-hd {
 }
 
 body[data-page^="admin-ad"] .ad-modal-title {
-    color: #e8eef6 !important;
+    color: #2e333b !important;
     font-size: 18px;
     font-weight: 700;
 }
@@ -1118,7 +1118,7 @@ body[data-page^="admin-ad"] .ad-modal-bd {
 }
 
 body[data-page^="admin-ad"] .ad-modal-msg {
-    color: #aab6c1;
+    color: #968a80;
     font-size: 14px;
 }
 
@@ -1128,13 +1128,13 @@ body[data-page^="admin-ad"] .ad-modal-actions {
     gap: 12px;
     justify-content: flex-end;
     padding: 12px 16px;
-    border-top: 1px solid #2a3b52 !important;
+    border-top: 1px solid #e9dfd5 !important;
 }
 
 body[data-page^="admin-ad"] .ad-modal .btn {
-    background: #1a1f27;
-    color: #dce6ff;
-    border: 1px solid #2d4b6a;
+    background: #ed741d;
+    color: #4b545f;
+    border: 1px solid #f2ac80;
     cursor: pointer;
     padding: 0 12px;
     border-radius: 6px;
@@ -1162,16 +1162,16 @@ body[data-page^="admin-ad"] .ad-modal .btn:hover {
 
 body[data-page^="admin-ad"] .ad-modal-bd::-webkit-scrollbar {
     width: 8px;
-    background-color: #1a1d22;
+    background-color: #f0e9e1;
 }
 
 body[data-page^="admin-ad"] .ad-modal-bd::-webkit-scrollbar-thumb {
-    background-color: #2e343c;
+    background-color: #e1d6cc;
     border-radius: 6px;
 }
 
 body[data-page^="admin-ad"] .ad-modal-bd::-webkit-scrollbar-thumb:hover {
-    background-color: #3d4550;
+    background-color: #d9cfc5;
 }
 
 #topmenu>li>a:not(.active):hover {
@@ -1193,13 +1193,13 @@ body[data-page^="admin-ad"] .ad-modal-bd::-webkit-scrollbar-thumb:hover {
 body[data-page^="admin-ad"] #view > div.spinning:first-child {
     margin: 16vh auto;
     display: table;
-    color: #eaf2ff;
+    color: #2e333b;
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
     letter-spacing: .2px;
-    background: rgba(9, 19, 35, .78);
-    border: 1px solid rgba(95, 145, 255, .35);
+    background: rgba(255, 255, 255, .92);
+    border: 1px solid rgba(237, 116, 29, .35);
     border-radius: 10px;
     padding: 10px 14px 10px 48px !important;
     box-shadow: 0 8px 24px rgba(0, 0, 0, .25);
@@ -1210,8 +1210,8 @@ body[data-page^="admin-ad"] #view > div.spinning:first-child::before {
     top: calc(50% - 7px);
     width: 14px;
     height: 14px;
-    border: 2px solid rgba(120, 174, 255, .35);
-    border-top-color: #7cb2ff;
+    border: 2px solid rgba(237, 116, 29, .35);
+    border-top-color: #f0a87d;
     border-radius: 50%;
     background: none;
     mask: none;

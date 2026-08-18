@@ -73,7 +73,7 @@ return view.extend({
 			var text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
 				text.setAttribute('x', i + 5);
 				text.setAttribute('y', 15);
-				text.setAttribute('style', 'fill:#eee; font-size:9pt; font-family:sans-serif; text-shadow:1px 1px 1px #000');
+				text.setAttribute('style', 'fill:#3d434c; font-size:9pt; font-family:sans-serif; text-shadow:1px 1px 1px #fff');
 				text.appendChild(document.createTextNode(Math.round((width - i) / step / 60) + 'm'));
 
 			G.appendChild(line);

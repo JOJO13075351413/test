@@ -1,26 +1,26 @@
 :root {
-    --ad-accent: #2b77ff;
-    --ad-bg-page: #12141a;
-    --ad-bg-panel: #1d2026;
-    --ad-bg-card: #21242b;
-    --ad-bg-active: #151d2a;
-    --ad-bg-input: #0f141d;
-    --ad-border: #2a3b52;
-    --ad-text-primary: #cfe6ff;
-    --ad-text-muted: #91a4bf;
-    --ad-text-title: #d6e3f5;
-    --ad-scroll-track: #14181f;
-    --ad-scroll-thumb: #2a3b52;
-    --ad-scroll-thumb-hover: #355172;
+    --ad-accent: #ed741d;
+    --ad-bg-page: #f4efe9;
+    --ad-bg-panel: #ffffff;
+    --ad-bg-card: #faf6f1;
+    --ad-bg-active: #fdf8f3;
+    --ad-bg-input: #ffffff;
+    --ad-border: #e9dfd5;
+    --ad-text-primary: #3d434c;
+    --ad-text-muted: #968a80;
+    --ad-text-title: #2e333b;
+    --ad-scroll-track: #f0e9e1;
+    --ad-scroll-thumb: #e9dfd5;
+    --ad-scroll-thumb-hover: #f4bc97;
 }
 
 .ad-c-btn {
     height: 32px;
     padding: 0 12px;
     border-radius: 6px;
-    border: 1px solid var(--ad-border, #2a3b52);
-    background: var(--ad-bg-panel, #1d2026);
-    color: var(--ad-text-primary, #cfe6ff);
+    border: 1px solid var(--ad-border, #e9dfd5);
+    background: var(--ad-bg-panel, #ffffff);
+    color: var(--ad-text-primary, #3d434c);
     cursor: pointer;
 }
 
@@ -29,8 +29,8 @@
 }
 
 .ad-c-btn--primary {
-    background: var(--ad-accent, #2b77ff);
-    border-color: var(--ad-accent, #2b77ff);
+    background: var(--ad-accent, #ed741d);
+    border-color: var(--ad-accent, #ed741d);
     color: #fff;
 }
 
@@ -43,9 +43,9 @@
 .ad-c-select {
     height: 32px;
     border-radius: 6px;
-    border: 1px solid var(--ad-border, #2a3b52);
-    background: var(--ad-bg-input, #0f141d);
-    color: var(--ad-text-primary, #cfe6ff);
+    border: 1px solid var(--ad-border, #e9dfd5);
+    background: var(--ad-bg-input, #ffffff);
+    color: var(--ad-text-primary, #3d434c);
 }
 
 .ad-c-input {
@@ -59,9 +59,9 @@
 .ad-c-icon-btn {
     width: 32px;
     height: 32px;
-    border: 1px solid var(--ad-border, #2a3b52);
+    border: 1px solid var(--ad-border, #e9dfd5);
     border-radius: 6px;
-    background-color: var(--ad-bg-input, #0f141d);
+    background-color: var(--ad-bg-input, #ffffff);
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -69,8 +69,8 @@
 }
 
 .ad-c-card {
-    background: var(--ad-bg-panel, #1d2026);
-    border: 1px solid var(--ad-border, #2a3b52);
+    background: var(--ad-bg-panel, #ffffff);
+    border: 1px solid var(--ad-border, #e9dfd5);
     border-radius: 8px;
 }
 
@@ -78,7 +78,7 @@
     width: 100%;
     border-collapse: separate;
     border-spacing: 0;
-    color: var(--ad-text-primary, #cfe6ff);
+    color: var(--ad-text-primary, #3d434c);
 }
 
 .ad-c-pager {

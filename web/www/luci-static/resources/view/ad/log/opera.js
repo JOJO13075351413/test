@@ -192,13 +192,13 @@ function renderLogPage(sqlApi) {
             placeholder: placeholderText || __('请选择'),
             styleVars: {
                 '--adui-ss-min-width': '120px',
-                '--adui-ss-arrow-color': '#7f93b3',
-                '--adui-ss-placeholder': '#7f93b3',
-                '--adui-ss-menu-border': '#2a3b52',
-                '--adui-ss-menu-bg': '#151b24',
-                '--adui-ss-menu-text': '#dbe8ff',
-                '--adui-ss-menu-hover-bg': '#20334a',
-                '--adui-ss-menu-selected-bg': '#2a4667'
+                '--adui-ss-arrow-color': '#968a80',
+                '--adui-ss-placeholder': '#968a80',
+                '--adui-ss-menu-border': '#e9dfd5',
+                '--adui-ss-menu-bg': '#ffffff',
+                '--adui-ss-menu-text': '#3d434c',
+                '--adui-ss-menu-hover-bg': '#fff4ec',
+                '--adui-ss-menu-selected-bg': '#ffe3cd'
             }
         });
     }

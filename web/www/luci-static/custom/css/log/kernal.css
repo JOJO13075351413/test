@@ -1,5 +1,5 @@
 body[data-page="admin-ad-log-kernal"] .content {
-    background: #11151b !important;
+    background: #f4efe9 !important;
     padding: 0 !important;
     min-height: 0 !important;
     display: flex;
@@ -27,10 +27,10 @@ body[data-page="admin-ad-log-kernal"] #view>.cbi-section {
 
 /* ----- Toolbar (Filter Bar) ----- */
 body[data-page="admin-ad-log-kernal"] .klog-bar {
-    background: #12141a;
+    background: #f4efe9;
     border-radius: 8px;
     padding: 4px 4px 10px 4px;
-    color: #cfe6ff;
+    color: #3d434c;
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -54,14 +54,14 @@ body[data-page="admin-ad-log-kernal"] .klog-bar .controls-right {
 
 body[data-page="admin-ad-log-kernal"] .klog-bar label {
     font-size: 13px;
-    color: #aab6c1;
+    color: #968a80;
 }
 
 body[data-page="admin-ad-log-kernal"] .klog-bar input,
 body[data-page="admin-ad-log-kernal"] .klog-bar select {
-    background: #0f141d;
-    border: 1px solid #2a3b52;
-    color: #e6f0ff;
+    background: #ffffff;
+    border: 1px solid #e9dfd5;
+    color: #3d434c;
     border-radius: 6px;
     height: 28px;
     padding: 0 8px;
@@ -76,20 +76,20 @@ body[data-page="admin-ad-log-kernal"] .klog-bar .btn {
     height: 30px;
     padding: 0 10px;
     border-radius: 6px;
-    border: 1px solid #2d4b6a;
-    background: #1a1f27;
-    color: #dce6ff;
+    border: 1px solid #f2ac80;
+    background: #ffffff;
+    color: #4b545f;
     cursor: pointer;
     font-size: 13px;
 }
 
 body[data-page="admin-ad-log-kernal"] .klog-bar .btn:hover {
-    background: #2a2d34;
+    background: #f1ece5;
 }
 
 body[data-page="admin-ad-log-kernal"] .klog-bar .cbi-button-apply {
-    background: #2b77ff;
-    border-color: #2b77ff;
+    background: #ed741d;
+    border-color: #ed741d;
     color: #fff;
 }
 
@@ -100,17 +100,17 @@ body[data-page="admin-ad-log-kernal"] .ns-icon-btn {
     width: 32px;
     height: 32px;
     padding: 0;
-    border: 1px solid #2a3b52;
+    border: 1px solid #e9dfd5;
     border-radius: 6px;
-    background: #0f141d;
+    background: #ffffff;
     color: inherit;
     cursor: pointer;
     text-decoration: none;
 }
 
 body[data-page="admin-ad-log-kernal"] .ns-icon-btn:hover {
-    background: #1a2330;
-    border-color: #3a5472;
+    background: #fdf8f3;
+    border-color: #f4bc97;
 }
 
 body[data-page="admin-ad-log-kernal"] .ns-icon-btn .ico {
@@ -156,8 +156,8 @@ body[data-page="admin-ad-log-kernal"] .log-table-wrap {
     flex: 1 1 auto;
     min-height: 0;
     overflow: auto;
-    background: #15181d;
-    border: 1px solid #282e36;
+    background: #faf6f1;
+    border: 1px solid #e9dfd5;
     border-radius: 8px;
 }
 
@@ -167,8 +167,8 @@ body[data-page="admin-ad-log-kernal"] table.log-table {
     border-spacing: 0;
     table-layout: fixed;
     font-size: 13px;
-    background: #15181d;
-    color: #c8d0d8;
+    background: #faf6f1;
+    color: #8b7b6e;
     border: 0;
     border-radius: 0;
     overflow: visible;
@@ -181,15 +181,15 @@ body[data-page="admin-ad-log-kernal"] table.log-table thead {
 }
 
 body[data-page="admin-ad-log-kernal"] table.log-table thead th {
-    background: #1e232a;
-    color: #d8dee6;
+    background: #f6f1eb;
+    color: #4b545f;
     font-weight: 600;
     text-align: left;
     padding: 11px 14px;
     position: sticky;
     top: 0;
     z-index: 2;
-    border-bottom: 1px solid #313844;
+    border-bottom: 1px solid #e1d6cc;
 }
 
 body[data-page="admin-ad-log-kernal"] table.log-table .log-line-number {
@@ -198,14 +198,14 @@ body[data-page="admin-ad-log-kernal"] table.log-table .log-line-number {
     max-width: 58px;
     padding-right: 10px;
     padding-left: 10px;
-    border-right: 1px solid #2a313a;
-    color: #768698;
+    border-right: 1px solid #e9dfd5;
+    color: #8b7b6e;
     text-align: right;
     user-select: none;
 }
 
 body[data-page="admin-ad-log-kernal"] table.log-table thead .log-line-number {
-    background: #1e232a;
+    background: #f6f1eb;
 }
 
 body[data-page="admin-ad-log-kernal"] table.log-table .log-copy-cell {
@@ -219,12 +219,12 @@ body[data-page="admin-ad-log-kernal"] table.log-table .log-copy-cell {
 
 body[data-page="admin-ad-log-kernal"] table.log-table tbody td {
     padding: 9px 14px;
-    border-bottom: 1px solid #242b34;
+    border-bottom: 1px solid #e9dfd5;
     vertical-align: top;
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     font-size: 12.5px;
     line-height: 1.65;
-    color: #cbd5df;
+    color: #4b545f;
     white-space: pre-wrap;
     overflow-wrap: anywhere;
     word-break: break-word;
@@ -233,7 +233,7 @@ body[data-page="admin-ad-log-kernal"] table.log-table tbody td {
 }
 
 body[data-page="admin-ad-log-kernal"] table.log-table tbody td.log-line-number {
-    color: #6f8092;
+    color: #8b7b6e;
     font-variant-numeric: tabular-nums;
     overflow-wrap: normal;
     word-break: normal;
@@ -254,9 +254,9 @@ body[data-page="admin-ad-log-kernal"] .log-copy-btn {
     width: 26px;
     height: 26px;
     padding: 0;
-    border: 1px solid #394451;
+    border: 1px solid #e1d6cc;
     border-radius: 6px;
-    background: #242b34;
+    background: #e9dfd5;
     cursor: pointer;
     opacity: 0;
     transform: translateX(3px);
@@ -277,8 +277,8 @@ body[data-page="admin-ad-log-kernal"] table.log-table tbody tr:focus-within .log
 
 body[data-page="admin-ad-log-kernal"] .log-copy-btn:hover,
 body[data-page="admin-ad-log-kernal"] .log-copy-btn:focus {
-    background: #2f3a47;
-    border-color: #617184;
+    background: #eae3da;
+    border-color: #f4bc97;
     outline: none;
 }
 
@@ -289,28 +289,28 @@ body[data-page="admin-ad-log-kernal"] .log-copy-btn.copied {
 
 /* Zebra stripes + hover */
 body[data-page="admin-ad-log-kernal"] table.log-table tbody tr:nth-child(odd) {
-    background: #15181d;
+    background: #faf6f1;
 }
 
 body[data-page="admin-ad-log-kernal"] table.log-table tbody tr:nth-child(even) {
-    background: #181d23;
+    background: #f6f1eb;
 }
 
 body[data-page="admin-ad-log-kernal"] table.log-table tbody tr:hover {
-    background: #202833;
+    background: #fdf8f3;
 }
 
 /* line number + empty state */
 body[data-page="admin-ad-log-kernal"] .log-table .ln {
     opacity: .6;
     margin-right: .75em;
-    color: #8ea0b4;
+    color: #968a80;
 }
 
 body[data-page="admin-ad-log-kernal"] .nodata {
     text-align: center;
     padding: 20px 0;
-    color: #7f93b3;
+    color: #968a80;
     font-size: 14px;
 }
 
@@ -321,17 +321,17 @@ body[data-page="admin-ad-log-kernal"] ::-webkit-scrollbar {
 }
 
 body[data-page="admin-ad-log-kernal"] ::-webkit-scrollbar-track {
-    background: #11151b;
+    background: #f4efe9;
 }
 
 body[data-page="admin-ad-log-kernal"] ::-webkit-scrollbar-thumb {
-    background: #2a2d34;
+    background: #f1ece5;
     border-radius: 6px;
-    border: 2px solid #11151b;
+    border: 2px solid #f4efe9;
 }
 
 body[data-page="admin-ad-log-kernal"] ::-webkit-scrollbar-thumb:hover {
-    background: #3c4352;
+    background: #ded6cc;
 }
 
 /* ----- Pager (wrap + bar) ----- */
@@ -341,8 +341,8 @@ body[data-page="admin-ad-log-kernal"] .cbi-section-footer {
     position: sticky;
     bottom: 0;
     z-index: 10;
-    background: #11151b;
-    border-top: 1px solid #333;
+    background: #f4efe9;
+    border-top: 1px solid #d9cfc5;
 }
 
 /* Centered pager content */
@@ -352,7 +352,7 @@ body[data-page="admin-ad-log-kernal"] .cbi-section-footer .pager-modern {
     justify-content: center;
     gap: 16px;
     padding: 8px 12px;
-    color: #cfe6ff;
+    color: #3d434c;
 }
 
 /* Left / center / right slots */
@@ -370,19 +370,19 @@ body[data-page="admin-ad-log-kernal"] .pm-btn {
     height: 26px;
     padding: 0 8px;
     border-radius: 6px;
-    border: 1px solid #444;
-    background: #2a2d34;
-    color: #e0e0e0;
+    border: 1px solid #d9cfc5;
+    background: #f1ece5;
+    color: #4b545f;
     cursor: pointer;
 }
 
 body[data-page="admin-ad-log-kernal"] .pm-btn:hover {
-    background: #343842;
+    background: #eae3da;
 }
 
 body[data-page="admin-ad-log-kernal"] .pm-btn.active {
-    background: #3f6ab8;
-    border-color: #3f6ab8;
+    background: #ed741d;
+    border-color: #ed741d;
     color: #fff;
 }
 
@@ -392,7 +392,7 @@ body[data-page="admin-ad-log-kernal"] .pm-btn[disabled] {
 }
 
 body[data-page="admin-ad-log-kernal"] .pm-ellipsis {
-    color: #aab6c1 !important;
+    color: #968a80 !important;
     padding: 0 6px;
 }
 
@@ -401,10 +401,10 @@ body[data-page="admin-ad-log-kernal"] .pager-modern select,
 body[data-page="admin-ad-log-kernal"] .pm-ps {
     height: 28px;
     padding: 0 8px;
-    border: 1px solid #2a3b52;
+    border: 1px solid #e9dfd5;
     border-radius: 6px;
-    background: #0f141d;
-    color: #cfe6ff;
+    background: #ffffff;
+    color: #3d434c;
     min-width: 64px;
     width: auto;
 }

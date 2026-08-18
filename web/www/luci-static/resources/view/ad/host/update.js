@@ -388,7 +388,7 @@ return view.extend({
             }
             var title = E('div', { 'class': 'um-title' }, _('升级确认'));
 
-            var msg = E('div', { 'style': 'padding: 0 8px 8px; line-height: 1.6; color: #e6f0ff;' }, [
+            var msg = E('div', { 'style': 'padding: 0 8px 8px; line-height: 1.6; color: #3d434c;' }, [
                 E('div', {}, _('固件升级过程中AD将自动重启，界面无法正常使用。')),
                 E('div', { 'style': 'margin-top: 6px; opacity: .9;' }, _('请确认是否继续执行升级？'))
             ]);
@@ -437,7 +437,7 @@ return view.extend({
             }
             var title = E('div', { 'class': 'um-title' }, _('提示'));
 
-            var msg = E('div', { 'style': 'padding: 0 8px 8px; line-height: 1.6; color: #e6f0ff;' }, String(text || ''));
+            var msg = E('div', { 'style': 'padding: 0 8px 8px; line-height: 1.6; color: #3d434c;' }, String(text || ''));
 
             function close() {
                 if (modal && modal.parentNode) {

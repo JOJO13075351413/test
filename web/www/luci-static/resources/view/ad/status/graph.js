@@ -48,7 +48,7 @@ function loadSVG(src) {
             throw new Error(response.statusText);
         }
         return E('div', {
-            'style': 'width:100%;height:300px;border:1px solid #3d414c;background:#1d2026;box-sizing:border-box'
+            'style': 'width:100%;height:300px;border:1px solid #e9dfd5;background:#ffffff;box-sizing:border-box'
         }, E(response.text()));
     });
 }
@@ -102,7 +102,7 @@ function updateGraphBandwidth(ifname, svg, lines, cb) {
         var text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
         text.setAttribute('x', x + 5);
         text.setAttribute('y', 15);
-        text.setAttribute('style', 'fill:#eee; font-size:9pt; font-family:sans-serif; text-shadow:1px 1px 1px #000');
+        text.setAttribute('style', 'fill:#3d434c; font-size:9pt; font-family:sans-serif; text-shadow:1px 1px 1px #fff');
         text.appendChild(document.createTextNode(Math.round((width - x) / step / 60) + 'm'));
 
         G.appendChild(line);
@@ -268,16 +268,16 @@ function buildGraphIfaceSingleSelect(current, options) {
         placeholder: _('请选择'),
         styleVars: {
             '--adui-ss-min-width': '180px',
-            '--adui-ss-bg': '#131720',
-            '--adui-ss-border': '#2a3b52',
-            '--adui-ss-text': '#e6f0ff',
-            '--adui-ss-placeholder': '#7f93b3',
-            '--adui-ss-arrow-color': '#a7bed8',
-            '--adui-ss-menu-border': '#2a3b52',
-            '--adui-ss-menu-bg': '#151b24',
-            '--adui-ss-menu-text': '#dbe8ff',
-            '--adui-ss-menu-hover-bg': '#20334a',
-            '--adui-ss-menu-selected-bg': '#2a4667'
+            '--adui-ss-bg': '#ffffff',
+            '--adui-ss-border': '#e9dfd5',
+            '--adui-ss-text': '#3d434c',
+            '--adui-ss-placeholder': '#968a80',
+            '--adui-ss-arrow-color': '#968a80',
+            '--adui-ss-menu-border': '#e9dfd5',
+            '--adui-ss-menu-bg': '#ffffff',
+            '--adui-ss-menu-text': '#3d434c',
+            '--adui-ss-menu-hover-bg': '#fff4ec',
+            '--adui-ss-menu-selected-bg': '#ffe3cd'
         }
     });
     select.onChange(function () {
@@ -325,7 +325,7 @@ function createBandwidthView(svg, devs) {
             E('table', { 'class': 'table', 'style': 'width:100%;table-layout:fixed' }, [
                 E('tr', { 'class': 'tr' }, [
                     E('td', { 'class': 'td right top' },
-                        E('strong', { 'style': 'border-bottom:2px solid #8bb4ff' }, [_('入站:')])),
+                        E('strong', { 'style': 'border-bottom:2px solid #f08a4d' }, [_('入站:')])),
                     E('td', { 'class': 'td', 'id': 'rx_bw_cur' }, rate(0, true)),
                     E('td', { 'class': 'td right top' }, E('strong', {}, [_('平均值:')])),
                     E('td', { 'class': 'td', 'id': 'rx_bw_avg' }, rate(0, true)),
@@ -466,7 +466,7 @@ function updateGraphConnections(svg, lines, cb) {
         var text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
         text.setAttribute('x', x + 5);
         text.setAttribute('y', 15);
-        text.setAttribute('style', 'fill:#eee; font-size:9pt; font-family:sans-serif; text-shadow:1px 1px 1px #000');
+        text.setAttribute('style', 'fill:#3d434c; font-size:9pt; font-family:sans-serif; text-shadow:1px 1px 1px #fff');
         text.appendChild(document.createTextNode(Math.round((width - x) / step / 60) + 'm'));
 
         G.appendChild(line);
@@ -695,7 +695,7 @@ function createConnectionsView(svg) {
         E('br'),
         E('table', { 'class': 'table', 'style': 'width:100%;table-layout:fixed' }, [
             E('tr', { 'class': 'tr' }, [
-                E('td', { 'class': 'td right top' }, E('strong', { 'style': 'border-bottom:2px solid #8bb4ff' }, [_('UDP:')])),
+                E('td', { 'class': 'td right top' }, E('strong', { 'style': 'border-bottom:2px solid #f08a4d' }, [_('UDP:')])),
                 E('td', { 'class': 'td', 'id': 'lb_udp_cur' }, ['0']),
                 E('td', { 'class': 'td right top' }, E('strong', {}, [_('平均值:')])),
                 E('td', { 'class': 'td', 'id': 'lb_udp_avg' }, ['0']),
@@ -831,7 +831,7 @@ function updateGraphLoad(svg, lines, cb) {
         var text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
         text.setAttribute('x', x + 5);
         text.setAttribute('y', 15);
-        text.setAttribute('style', 'fill:#eee; font-size:9pt; font-family:sans-serif; text-shadow:1px 1px 1px #000');
+        text.setAttribute('style', 'fill:#3d434c; font-size:9pt; font-family:sans-serif; text-shadow:1px 1px 1px #fff');
         text.appendChild(document.createTextNode(Math.round((width - x) / step / 60) + 'm'));
 
         G.appendChild(line);

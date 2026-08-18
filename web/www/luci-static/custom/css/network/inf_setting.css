@@ -1,5 +1,5 @@
 body[data-page="admin-ad-network-inf-setting"] .content {
-    background: #12141a !important;
+    background: #f4efe9 !important;
     padding: 0 !important;
     display: flex;
     flex-direction: column;
@@ -83,16 +83,16 @@ body[data-page="admin-ad-network-inf-setting"] .ns-input {
     background: var(--ad-bg-input);
     border: 1px solid var(--ad-border);
     border-radius: 6px;
-    color: #e6f0ff;
+    color: #3d434c;
 }
 
 body[data-page="admin-ad-network-inf-setting"] .ns-btn {
     height: 32px;
     padding: 0 12px;
     border-radius: 6px;
-    border: 1px solid #2d4b6a;
+    border: 1px solid #f2ac80;
     background: var(--ad-bg-panel);
-    color: #dce3ea;
+    color: #4b545f;
     cursor: pointer;
 }
 
@@ -173,7 +173,7 @@ body[data-page="admin-ad-network-inf-setting"] .ns-page-btn {
     padding: 0 10px;
     border-radius: 6px;
     border: 1px solid var(--ad-border);
-    background: #20334a;
+    background: #fff4ec;
     color: var(--ad-text-primary);
 }
 
@@ -227,7 +227,7 @@ body[data-page="admin-ad-network-inf-setting"] .ns-subtabs {
 
 body[data-page="admin-ad-network-inf-setting"] .ns-subtab {
     background: transparent !important;
-    color: #9fbbe0;
+    color: #8b7b6e;
     padding: 8px 14px;
     border: 0;
     border-bottom: 3px solid var(--ad-border);
@@ -249,7 +249,7 @@ body[data-page="admin-ad-network-inf-setting"] .ns-subtab.active {
 }
 
 body[data-page="admin-ad-network-inf-setting"] .ns-subtab:focus-visible {
-    outline: 2px solid #2b77ff55;
+    outline: 2px solid #ed741d55;
     outline-offset: 2px;
 }
 
@@ -274,7 +274,7 @@ body[data-page="admin-ad-network-inf-setting"] .ns-mode-tab {
     border-radius: 6px;
     border: 1px solid var(--ad-border);
     background: var(--ad-bg-input);
-    color: #9fbbe0;
+    color: #8b7b6e;
     cursor: pointer;
     display: inline-flex;
     align-items: center;
@@ -284,7 +284,7 @@ body[data-page="admin-ad-network-inf-setting"] .ns-mode-tab {
 
 body[data-page="admin-ad-network-inf-setting"] .ns-mode-tab:hover {
     color: var(--ad-text-primary);
-    border-color: #3a5475;
+    border-color: #f2ac80;
 }
 
 body[data-page="admin-ad-network-inf-setting"] .ns-mode-tab.active {
@@ -294,7 +294,7 @@ body[data-page="admin-ad-network-inf-setting"] .ns-mode-tab.active {
 }
 
 body[data-page="admin-ad-network-inf-setting"] .ns-mode-tab:focus-visible {
-    outline: 2px solid #2b77ff55;
+    outline: 2px solid #ed741d55;
     outline-offset: 1px;
 }
 
@@ -351,9 +351,9 @@ body[data-page="admin-ad-network-inf-setting"] .ns-panel-top {
 body[data-page="admin-ad-network-inf-setting"] .ns-panel-top-left,
 body[data-page="admin-ad-network-inf-setting"] .ns-panel-top-right {
     min-height: 0;
-    border: 1px solid #2a3b52;
+    border: 1px solid #e9dfd5;
     border-radius: 8px;
-    background: #181b21;
+    background: #f6f1eb;
     padding: 10px;
     box-sizing: border-box;
     display: flex;
@@ -362,7 +362,7 @@ body[data-page="admin-ad-network-inf-setting"] .ns-panel-top-right {
 }
 
 body[data-page="admin-ad-network-inf-setting"] .ns-panel-subtitle {
-    color: #cfe6ff;
+    color: #3d434c;
     font-size: 13px;
     font-weight: 600;
 }
@@ -378,7 +378,7 @@ body[data-page="admin-ad-network-inf-setting"] .ns-wired-grid-wrap {
     width: 66.6667%;
     max-width: 100%;
     align-self: center;
-    background: #1d2026;
+    background: #ffffff;
 }
 
 body[data-page="admin-ad-network-inf-setting"] .ns-wired-grid-body {
@@ -405,7 +405,7 @@ body[data-page="admin-ad-network-inf-setting"] .ns-wired-table td {
     font-size: 0;
     text-align: center;
     vertical-align: middle;
-    color: #dbe8ff;
+    color: #3d434c;
 }
 
 body[data-page="admin-ad-network-inf-setting"] .ns-wired-cell {
@@ -424,7 +424,7 @@ body[data-page="admin-ad-network-inf-setting"] .ns-wired-cell::after {
 }
 
 body[data-page="admin-ad-network-inf-setting"] .ns-wired-cell.empty {
-    color: #6f829e;
+    color: #8b7b6e;
 }
 
 body[data-page="admin-ad-network-inf-setting"] .ns-wired-cell.selected {
@@ -433,7 +433,7 @@ body[data-page="admin-ad-network-inf-setting"] .ns-wired-cell.selected {
 
 body[data-page="admin-ad-network-inf-setting"] .ns-wired-cell.selected::after {
     border-width: 2px;
-    border-color: #2b77ff;
+    border-color: #ed741d;
     border-radius: 3px;
 }
 
@@ -462,7 +462,7 @@ body[data-page="admin-ad-network-inf-setting"] .ns-wired-port-no {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    color: #9fbbe0;
+    color: #8b7b6e;
     font-size: 11px;
     line-height: 1;
     pointer-events: none;
@@ -481,10 +481,10 @@ body[data-page="admin-ad-network-inf-setting"] .ns-wired-legend {
     align-items: center;
     justify-content: center;
     gap: 18px;
-    color: #9fbbe0;
+    color: #8b7b6e;
     font-size: 12px;
     border: none;
-    background: #1d2026;
+    background: #ffffff;
     border-radius: 8px;
     min-height: 34px;
     padding: 4px 10px;
@@ -508,10 +508,10 @@ body[data-page="admin-ad-network-inf-setting"] .ns-wired-legend-icon {
 body[data-page="admin-ad-network-inf-setting"] .ns-panel-empty {
     flex: 1 1 auto;
     min-height: 120px;
-    border: 1px dashed #2a3b52;
+    border: 1px dashed #e9dfd5;
     border-radius: 8px;
-    color: #9fbbe0;
-    background: #131821;
+    color: #8b7b6e;
+    background: #f6f1eb;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -523,7 +523,7 @@ body[data-page="admin-ad-network-inf-setting"] .ns-wireless-state-list {
     min-height: 88px;
     border: none;
     border-radius: 8px;
-    background: #1d2026;
+    background: #ffffff;
     padding: 8px 12px;
     box-sizing: border-box;
     display: flex;
@@ -544,7 +544,7 @@ body[data-page="admin-ad-network-inf-setting"] .ns-wireless-state-left {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    color: #dbe8ff;
+    color: #3d434c;
     font-size: 13px;
     line-height: 1;
 }
@@ -569,7 +569,7 @@ body[data-page="admin-ad-network-inf-setting"] .ns-wireless-state-right.enabled 
 }
 
 body[data-page="admin-ad-network-inf-setting"] .ns-wireless-state-right.disabled {
-    color: #9fbbe0;
+    color: #8b7b6e;
 }
 
 body[data-page="admin-ad-network-inf-setting"] .ns-wireless-extra {
@@ -587,7 +587,7 @@ body[data-page="admin-ad-network-inf-setting"] .ns-wireless-extra {
 
 body[data-page="admin-ad-network-inf-setting"] .ns-wireless-col {
     border: none;
-    background: #1d2026;
+    background: #ffffff;
     border-radius: 8px;
     padding: 14px 10px 8px;
     display: flex;
@@ -617,7 +617,7 @@ body[data-page="admin-ad-network-inf-setting"] .ns-wireless-head-left {
     align-items: center;
     justify-content: flex-start;
     gap: 8px;
-    color: #dbe8ff;
+    color: #3d434c;
     min-width: 0;
     flex: 0 0 48%;
     font-size: 15px;
@@ -626,7 +626,7 @@ body[data-page="admin-ad-network-inf-setting"] .ns-wireless-head-left {
 
 body[data-page="admin-ad-network-inf-setting"] .ns-wireless-col-row .k {
     flex: 0 0 auto;
-    color: #9fbbe0;
+    color: #8b7b6e;
     white-space: nowrap;
     text-align: left;
     min-width: 0;
@@ -664,9 +664,9 @@ body[data-page="admin-ad-network-inf-setting"] .ns-wireless-head-state.enabled {
 }
 
 body[data-page="admin-ad-network-inf-setting"] .ns-wireless-head-state.disabled {
-    color: #9fbbe0;
-    background: #1a2431;
-    border-color: #2a3b52;
+    color: #8b7b6e;
+    background: #f6f1eb;
+    border-color: #e9dfd5;
 }
 
 body[data-page="admin-ad-network-inf-setting"] .ns-wireless-head-left .ns-wireless-state-icon {
@@ -723,24 +723,24 @@ body[data-page="admin-ad-network-inf-setting"] .ns-port-detail-table {
 
 body[data-page="admin-ad-network-inf-setting"] .ns-port-detail-table th,
 body[data-page="admin-ad-network-inf-setting"] .ns-port-detail-table td {
-    border: 1px solid #2a3b52;
+    border: 1px solid #e9dfd5;
     padding: 12px 12px;
     text-align: left;
     vertical-align: middle;
 }
 
 body[data-page="admin-ad-network-inf-setting"] .ns-port-detail-table thead th {
-    background: #1d2026;
-    color: #cfe6ff;
+    background: #ffffff;
+    color: #3d434c;
     font-weight: 600;
 }
 
 body[data-page="admin-ad-network-inf-setting"] .ns-port-detail-table tbody tr:nth-child(odd) {
-    background: #1b2028;
+    background: #f6f1eb;
 }
 
 body[data-page="admin-ad-network-inf-setting"] .ns-port-detail-table tbody tr:nth-child(even) {
-    background: #171c24;
+    background: #faf6f1;
 }
 
 body[data-page="admin-ad-network-inf-setting"] .ns-port-detail-table td.k {
@@ -755,14 +755,14 @@ body[data-page="admin-ad-network-inf-setting"] .ns-port-detail-row {
     display: flex;
     align-items: center;
     gap: 10px;
-    color: #dbe8ff;
+    color: #3d434c;
     font-size: 13px;
     line-height: 1.8;
 }
 
 body[data-page="admin-ad-network-inf-setting"] .ns-port-detail-row .k {
     min-width: 56px;
-    color: #9fbbe0;
+    color: #8b7b6e;
 }
 
 body[data-page="admin-ad-network-inf-setting"] .ns-modal-hd,
@@ -783,7 +783,7 @@ body[data-page="admin-ad-network-inf-setting"] .ns-btn.danger {
 body[data-page="admin-ad-network-inf-setting"] .ns-table {
     flex: 1 1 auto;
     min-height: 260px;
-    color: #9fbbe0;
+    color: #8b7b6e;
     display: block !important;
     place-items: initial !important;
     padding: 0 !important;
@@ -865,7 +865,7 @@ body[data-page="admin-ad-network-inf-setting"] .ns-data-table thead th {
     position: sticky;
     top: 0;
     z-index: 1;
-    background: #24272e;
+    background: #f6f1eb;
     border: 0px solid var(--ad-border);
     padding: 10px 12px;
     text-align: left;
@@ -874,9 +874,9 @@ body[data-page="admin-ad-network-inf-setting"] .ns-data-table thead th {
 
 body[data-page="admin-ad-network-inf-setting"] .ns-data-table tbody td {
     padding: 10px 12px;
-    border-bottom: 1px solid #212a36;
+    border-bottom: 1px solid #e9dfd5;
     vertical-align: middle;
-    color: #e9e9ea;
+    color: #4b545f;
 }
 
 body[data-page="admin-ad-network-inf-setting"] .ns-data-table tbody tr:nth-child(odd) {
@@ -894,7 +894,7 @@ body[data-page="admin-ad-network-inf-setting"] .ns-table::-webkit-scrollbar {
 
 body[data-page="admin-ad-network-inf-setting"] .ns-table::-webkit-scrollbar-track {
     background: var(--ad-scroll-track);
-    border-left: 1px solid #202733;
+    border-left: 1px solid #e9dfd5;
 }
 
 body[data-page="admin-ad-network-inf-setting"] .ns-table::-webkit-scrollbar-thumb {
@@ -911,8 +911,8 @@ body[data-page="admin-ad-network-inf-setting"] .ns-table::-webkit-scrollbar-thum
     align-items: center;
     justify-content: space-between;
     gap: 12px;
-    background: var(--cbi-section-bg, #1b1e24);
-    border-top: 1px solid var(--cbi-section-border, #333);
+    background: var(--cbi-section-bg, #ffffff);
+    border-top: 1px solid var(--cbi-section-border, #d9cfc5);
     padding: 8px 12px;
     position: sticky;
     bottom: 0;
@@ -945,19 +945,19 @@ body[data-page="admin-ad-network-inf-setting"] .ns-table::-webkit-scrollbar-thum
     height: 26px;
     padding: 0 8px;
     border-radius: 6px;
-    border: 1px solid #444;
-    background: #2a2d34;
-    color: #e0e0e0;
+    border: 1px solid #d9cfc5;
+    background: #f1ece5;
+    color: #4b545f;
     cursor: pointer
 }
 
 .pm-btn:hover {
-    background: #343842
+    background: #eae3da
 }
 
 .pm-btn.active {
-    background: #3f6ab8;
-    border-color: #3f6ab8;
+    background: #ed741d;
+    border-color: #ed741d;
     color: #fff
 }
 
@@ -976,7 +976,7 @@ body[data-page="admin-ad-network-inf-setting"] .ns-table::-webkit-scrollbar-thum
 }
 
 .pager-modern .pm-ellipsis {
-    color: #aab6c1 !important;
+    color: #968a80 !important;
     padding: 0 6px;
     display: inline-flex;
     align-items: center;

@@ -44,10 +44,10 @@ function memoryProgressbar(value, max, byte, reverse) {
 
     if (!reverse) {
         if (pc <= 30) {
-            color1 = '#7eb6ff';
-            color2 = '#4299e1';
+            color1 = '#f08a4d';
+            color2 = '#ed741d';
         } else if (pc <= 70) {
-            color1 = '#4299e1';
+            color1 = '#ed741d';
             color2 = '#ffa726';
         } else {
             color1 = '#ffa726';
@@ -59,10 +59,10 @@ function memoryProgressbar(value, max, byte, reverse) {
             color2 = '#ffa726';
         } else if (pc <= 70) {
             color1 = '#ffa726';
-            color2 = '#4299e1';
+            color2 = '#ed741d';
         } else {
-            color1 = '#4299e1';
-            color2 = '#7eb6ff';
+            color1 = '#ed741d';
+            color2 = '#f08a4d';
         }
     }
 
@@ -239,11 +239,11 @@ var StorageChartModule = {
         ctx.clearRect(x - radius - 5, y - radius - 5, radius * 2 + 10, radius * 2 + 10);
         ctx.beginPath();
         ctx.arc(x, y, radius, 0, Math.PI * 2);
-        ctx.fillStyle = 'rgba(255, 255, 255, 0.05)';
+        ctx.fillStyle = 'rgba(237, 116, 29, 0.07)';
         ctx.fill();
         ctx.beginPath();
         ctx.arc(x, y, radius, 0, Math.PI * 2);
-        ctx.strokeStyle = '#2a2e36';
+        ctx.strokeStyle = '#e9dfd5';
         ctx.lineWidth = 1;
         ctx.stroke();
 
@@ -271,20 +271,20 @@ var StorageChartModule = {
                 ctx.arc(x, y, radius, startAngle, endAngle);
                 ctx.lineTo(x, y);
                 ctx.closePath();
-                ctx.strokeStyle = '#1d2026';
+                ctx.strokeStyle = '#ffffff';
                 ctx.lineWidth = 1;
                 ctx.stroke();
             }
         }
 
         ctx.font = 'bold 16px sans-serif';
-        ctx.fillStyle = '#e2e8f0';
+        ctx.fillStyle = '#2e333b';
         ctx.textAlign = 'center';
         ctx.textBaseline = 'middle';
         ctx.fillText(percentage.toFixed(1) + '%', x, y);
 
         ctx.font = '13px sans-serif';
-        ctx.fillStyle = '#cfe6ff';
+        ctx.fillStyle = '#3d434c';
         ctx.fillText(title, x, y + radius + 20);
 
         ctx.font = '12px sans-serif';
@@ -319,7 +319,7 @@ var StorageChartModule = {
 
         if (!root.total || !tmp.total) {
             return E('div', { 'class': 'chart-container' }, [
-                E('p', { 'style': 'color: #a0aec0; text-align: center;' }, _('没有可用的存储数据'))
+                E('p', { 'style': 'color: #8b7b6e; text-align: center;' }, _('没有可用的存储数据'))
             ]);
         }
 

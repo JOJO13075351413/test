@@ -79,7 +79,7 @@ return view.extend({
 					color = scanCache[res.bssid].color;
 
 				line.setAttribute('style', 'fill:'+color+'4f'+';stroke:'+color+';stroke-width:0.5');
-				text.setAttribute('style', 'fill:'+color+';font-size:9pt; font-family:sans-serif; text-shadow:1px 1px 1px #000');
+				text.setAttribute('style', 'fill:'+color+';font-size:9pt; font-family:sans-serif; text-shadow:1px 1px 1px #fff');
 				text.appendChild(document.createTextNode(res.ssid || res.bssid));
 
 				group.appendChild(line)
@@ -118,7 +118,7 @@ return view.extend({
 		function createGraphText(graph, pos, text) {
 			var elem = document.createElementNS('http://www.w3.org/2000/svg', 'text');
 			elem.setAttribute('y', 15);
-			elem.setAttribute('style', 'fill:#eee; font-size:9pt; font-family:sans-serif; text-shadow:1px 1px 1px #000');
+			elem.setAttribute('style', 'fill:#3d434c; font-size:9pt; font-family:sans-serif; text-shadow:1px 1px 1px #fff');
 			elem.setAttribute('x', pos + 5);
 			elem.appendChild(document.createTextNode(text));
 			graph.appendChild(elem);

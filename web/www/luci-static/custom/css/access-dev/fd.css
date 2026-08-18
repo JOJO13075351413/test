@@ -1,5 +1,5 @@
 body[data-page="admin-ad-access-dev-fd"] .content {
-    background: #12141a !important;
+    background: #f4efe9 !important;
     padding: 0 !important;
     display: flex;
     flex-direction: column;
@@ -46,7 +46,7 @@ body[data-page="admin-ad-access-dev-fd"] .ns-card {
     width: 100%;
     box-sizing: border-box;
     padding: 12px;
-    background: #1d2026;
+    background: #ffffff;
     border-radius: 8px;
 }
 
@@ -55,7 +55,7 @@ body[data-page="admin-ad-access-dev-fd"] .ns-filter {
     grid-template-columns: 1fr auto;
     gap: 12px;
     align-items: center;
-    background: #1d2026;
+    background: #ffffff;
     border-radius: 6px;
 }
 
@@ -76,19 +76,19 @@ body[data-page="admin-ad-access-dev-fd"] .ns-input {
     width: 180px;
     height: 32px;
     padding: 0 10px;
-    background: #0f141d;
-    border: 1px solid #2a3b52;
+    background: #ffffff;
+    border: 1px solid #e9dfd5;
     border-radius: 6px;
-    color: #e6f0ff;
+    color: #3d434c;
 }
 
 body[data-page="admin-ad-access-dev-fd"] .ns-select {
     height: 32px;
     padding: 0 8px;
     min-width: 160px;
-    background: #0f141d;
-    border: 1px solid #2a3b52;
-    color: #cfe6ff;
+    background: #ffffff;
+    border: 1px solid #e9dfd5;
+    color: #3d434c;
     border-radius: 6px;
 }
 
@@ -96,15 +96,15 @@ body[data-page="admin-ad-access-dev-fd"] .ns-btn {
     height: 32px;
     padding: 0 12px;
     border-radius: 6px;
-    border: 1px solid #2d4b6a;
-    background: #20334a;
-    color: #cfe6ff;
+    border: 1px solid #f2ac80;
+    background: #fff4ec;
+    color: #3d434c;
     cursor: pointer;
 }
 
 body[data-page="admin-ad-access-dev-fd"] .ns-btn.primary {
-    background: #2b77ff;
-    border-color: #2b77ff;
+    background: #ed741d;
+    border-color: #ed741d;
     color: #fff;
 }
 
@@ -121,9 +121,9 @@ body[data-page="admin-ad-access-dev-fd"] .ns-btn:hover {
 body[data-page="admin-ad-access-dev-fd"] .ns-icon-btn {
     width: 32px;
     height: 32px;
-    border: 1px solid #2a3b52;
+    border: 1px solid #e9dfd5;
     border-radius: 6px;
-    background-color: #0f141d;
+    background-color: #ffffff;
     background-image: none !important;
     background-repeat: no-repeat;
     background-position: center;
@@ -165,9 +165,9 @@ body[data-page="admin-ad-access-dev-fd"] .ns-table {
     overflow: auto;
     display: block;
     padding: 0;
-    background: #1d2026;
+    background: #ffffff;
     scrollbar-width: thin;
-    scrollbar-color: #2a3b52 #14181f;
+    scrollbar-color: #e9dfd5 #f0e9e1;
 }
 
 body[data-page="admin-ad-access-dev-fd"] .ns-table::-webkit-scrollbar {
@@ -176,17 +176,17 @@ body[data-page="admin-ad-access-dev-fd"] .ns-table::-webkit-scrollbar {
 }
 
 body[data-page="admin-ad-access-dev-fd"] .ns-table::-webkit-scrollbar-track {
-    background: #14181f;
-    border-left: 1px solid #202733;
+    background: #f0e9e1;
+    border-left: 1px solid #e9dfd5;
 }
 
 body[data-page="admin-ad-access-dev-fd"] .ns-table::-webkit-scrollbar-thumb {
-    background: #2a3b52;
+    background: #e9dfd5;
     border-radius: 8px;
 }
 
 body[data-page="admin-ad-access-dev-fd"] .ns-table::-webkit-scrollbar-thumb:hover {
-    background: #355172;
+    background: #f4bc97;
 }
 
 body[data-page="admin-ad-access-dev-fd"] .ns-data-table {
@@ -194,15 +194,15 @@ body[data-page="admin-ad-access-dev-fd"] .ns-data-table {
     border-collapse: separate;
     border-spacing: 0;
     font-size: 13px;
-    color: #cfe6ff;
-    background: #1d2026;
+    color: #3d434c;
+    background: #ffffff;
 }
 
 body[data-page="admin-ad-access-dev-fd"] .ns-data-table thead th {
     position: sticky;
     top: 0;
     z-index: 1;
-    background: #24272e;
+    background: #f6f1eb;
     padding: 10px 12px;
     text-align: left;
     white-space: nowrap;
@@ -222,16 +222,16 @@ body[data-page="admin-ad-access-dev-fd"] .ns-data-table thead th.th-checkbox inp
 
 body[data-page="admin-ad-access-dev-fd"] .ns-data-table tbody td {
     padding: 10px 12px;
-    border-bottom: 1px solid #212a36;
+    border-bottom: 1px solid #e9dfd5;
     vertical-align: middle;
 }
 
 body[data-page="admin-ad-access-dev-fd"] .ns-data-table tbody tr:nth-child(odd) {
-    background: #1d2026;
+    background: #ffffff;
 }
 
 body[data-page="admin-ad-access-dev-fd"] .ns-data-table tbody tr:nth-child(even) {
-    background: #21242b;
+    background: #faf6f1;
 }
 
 body[data-page="admin-ad-access-dev-fd"] .ns-footer {
@@ -243,7 +243,7 @@ body[data-page="admin-ad-access-dev-fd"] .ns-footer {
 }
 
 body[data-page="admin-ad-access-dev-fd"] .ns-pag-info {
-    color: #cfe6ff;
+    color: #3d434c;
     font-size: 13px;
 }
 
@@ -259,19 +259,19 @@ body[data-page="admin-ad-access-dev-fd"] .pm-btn {
     height: 26px;
     padding: 0 8px;
     border-radius: 6px;
-    border: 1px solid #444;
-    background: #2a2d34;
-    color: #e0e0e0;
+    border: 1px solid #d9cfc5;
+    background: #f1ece5;
+    color: #4b545f;
     cursor: pointer;
 }
 
 body[data-page="admin-ad-access-dev-fd"] .pm-btn:hover {
-    background: #343842;
+    background: #eae3da;
 }
 
 body[data-page="admin-ad-access-dev-fd"] .pm-btn.active {
-    background: #3f6ab8;
-    border-color: #3f6ab8;
+    background: #ed741d;
+    border-color: #ed741d;
     color: #fff;
 }
 
@@ -283,14 +283,14 @@ body[data-page="admin-ad-access-dev-fd"] .pm-btn[disabled] {
 body[data-page="admin-ad-access-dev-fd"] .pm-ellipsis {
     padding: 0 6px;
     opacity: .7;
-    color: #aab6c1;
+    color: #968a80;
 }
 
 body[data-page="admin-ad-access-dev-fd"] .ns-pag-size {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    color: #cfe6ff;
+    color: #3d434c;
 }
 
 body[data-page="admin-ad-access-dev-fd"] .ns-select#pageSizeSel {
@@ -304,7 +304,7 @@ body[data-page="admin-ad-access-dev-fd"] .ns-filter {
     grid-template-columns: 1fr auto;
     gap: 12px;
     align-items: center;
-    background: #1d2026;
+    background: #ffffff;
     border-radius: 6px;
 }
 
@@ -324,7 +324,7 @@ body[data-page="admin-ad-access-dev-fd"] .ns-fieldpair {
 
 body[data-page="admin-ad-access-dev-fd"] .ns-lbl {
     text-align: right;
-    color: #cfe6ff;
+    color: #3d434c;
     opacity: .95;
 }
 
@@ -337,10 +337,10 @@ body[data-page="admin-ad-access-dev-fd"] .ns-input {
     width: 150px;
     height: 32px;
     padding: 0 10px;
-    background: #0f141d;
-    border: 1px solid #2a3b52;
+    background: #ffffff;
+    border: 1px solid #e9dfd5;
     border-radius: 6px;
-    color: #e6f0ff;
+    color: #3d434c;
 }
 
 body[data-page="admin-ad-access-dev-fd"] .ns-select {
@@ -348,9 +348,9 @@ body[data-page="admin-ad-access-dev-fd"] .ns-select {
     min-width: 60px;
     max-width: 100px;
     padding: 0 8px;
-    background: #0f141d;
-    border: 1px solid #2a3b52;
-    color: #cfe6ff;
+    background: #ffffff;
+    border: 1px solid #e9dfd5;
+    color: #3d434c;
     border-radius: 6px;
 }
 
@@ -368,10 +368,10 @@ body[data-page="admin-ad-access-dev-fd"] .ns-icon-btn.spin1::before {
 }
 
 body[data-page="admin-ad-access-dev-fd"] input[type="checkbox"]:checked::after {
-    background: #cfe6ff !important;
+    background: #3d434c !important;
 }
 
 body[data-page="admin-ad-access-dev-fd"] input[type="checkbox"]::before {
     background: transparent !important;
-    border: 1px solid #cfe6ff !important;
+    border: 1px solid #3d434c !important;
 }

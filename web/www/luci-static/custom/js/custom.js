@@ -232,7 +232,7 @@
         clock.style.marginRight = '8px';
         clock.style.fontSize = '13px';
         clock.style.lineHeight = '1';
-        clock.style.color = '#cbd5e1';
+        clock.style.color = '#6f675f';
         clock.style.userSelect = 'none';
         clock.style.whiteSpace = 'nowrap';
 
@@ -280,7 +280,7 @@
             bc.style.display = 'flex';
             bc.style.alignItems = 'center';
             bc.style.gap = '8px';
-            bc.style.color = '#cbd5e1';
+            bc.style.color = '#6f675f';
             bc.style.fontSize = '13px';
             bc.style.whiteSpace = 'nowrap';
             bc.style.overflow = 'hidden';

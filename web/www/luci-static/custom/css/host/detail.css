@@ -1,17 +1,17 @@
 :root {
-    --bg-app: #11151b;
-    --bg-card: #1a1f27;
-    --bg-head: #202631;
-    --bd: #242b33;
-    --fg: #cfe6ff;
-    --muted: #93a4bb;
+    --bg-app: #f4efe9;
+    --bg-card: #ffffff;
+    --bg-head: #faf6f1;
+    --bd: #e9dfd5;
+    --fg: #3d434c;
+    --muted: #968a80;
     --ok: #38d39f;
-    --offline: #8b93a3;
-    --row-hover: #1f2732;
-    --btn-bg: #1a1f27;
-    --btn-bd: #2d4b6a;
-    --btn-hv: #243449;
-    --primary: #2b77ff;
+    --offline: #968a80;
+    --row-hover: #fdf8f3;
+    --btn-bg: #ffffff;
+    --btn-bd: #f2ac80;
+    --btn-hv: #fdf8f3;
+    --primary: #ed741d;
     --danger: #ec4343;
 }
 
@@ -64,7 +64,7 @@ body,
     align-items: center;
     justify-content: space-between;
     gap: 10px;
-    background: #11151b;
+    background: #f4efe9;
     border-radius: 10px;
     padding: 10px 12px;
 }
@@ -114,8 +114,8 @@ body,
     height: 32px;
     padding: 0;
     border-radius: 6px;
-    background: #0f141d center / 18px 18px no-repeat url(/luci-static/custom/img/refresh.svg);
-    border: 1px solid #2a3b52;
+    background: #ffffff center / 18px 18px no-repeat url(/luci-static/custom/img/refresh.svg);
+    border: 1px solid #e9dfd5;
     cursor: pointer;
 }
 
@@ -161,7 +161,7 @@ body,
 }
 
 .section-title {
-    color: #e8eef6;
+    color: #2e333b;
     font-size: 14px;
     font-weight: 600;
     line-height: 1.2;
@@ -177,13 +177,13 @@ table.dev-table {
 .dev-table thead th {
     text-align: left;
     padding: 10px 12px;
-    background: #24272e;
-    color: #e8eef6;
+    background: #f6f1eb;
+    color: #2e333b;
 }
 
 .dev-table tbody td {
     padding: 10px 12px;
-    color: #e9e9ea;
+    color: #4b545f;
 }
 
 .dev-table td.empty {
@@ -200,21 +200,21 @@ table.dev-kv-table {
 
 .dev-kv-table td {
     padding: 10px 12px;
-    border-top: 1px solid #2a313b;
-    color: #e9e9ea;
+    border-top: 1px solid #e9dfd5;
+    color: #4b545f;
 }
 
 .dev-kv-table tr:nth-child(odd) {
-    background: #1c212a;
+    background: #f6f1eb;
 }
 
 .dev-kv-table tr:nth-child(even) {
-    background: #1a1f27;
+    background: #ffffff;
 }
 
 .dev-kv-table td.k {
     width: 32%;
-    color: #b9cbe1;
+    color: #968a80;
 }
 
 .status-chip {
@@ -223,8 +223,8 @@ table.dev-kv-table {
     gap: 6px;
     padding: 4px 10px;
     border-radius: 999px;
-    background: #1e2530;
-    border: 1px solid #2b3440;
+    background: #f6f1eb;
+    border: 1px solid #e9dfd5;
     font-size: 12px;
 }
 
@@ -265,8 +265,8 @@ table.dev-kv-table {
 .modal,
 .ui-modal,
 .modal-body {
-    background: #1d2026 !important;
-    color: #e8eef6 !important;
+    background: #ffffff !important;
+    color: #2e333b !important;
     border-radius: 12px !important;
     border: none;
 }
@@ -315,8 +315,8 @@ table.dev-kv-table {
 }
 
 .cfg-input:focus {
-    border-color: #6b90ff;
-    box-shadow: 0 0 0 2px rgba(107, 144, 255, .15);
+    border-color: #f08a4d;
+    box-shadow: 0 0 0 2px rgba(237, 116, 29, .15);
 }
 
 .cfg-input[readonly] {
@@ -361,9 +361,9 @@ table.dev-kv-table {
 .ns-icon-btn {
     width: 32px;
     height: 32px;
-    border: 1px solid #2a3b52;
+    border: 1px solid #e9dfd5;
     border-radius: 6px;
-    background-color: #0f141d;
+    background-color: #ffffff;
     cursor: pointer;
     display: inline-flex;
     align-items: center;
@@ -381,7 +381,7 @@ table.dev-kv-table {
 }
 
 h4 {
-    color: #e8eef6 !important;
+    color: #2e333b !important;
 }
 
 .ns-icon-btn.refresh .ico {

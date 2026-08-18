@@ -90,9 +90,9 @@
 		calc(var(--border-color-l) + var(--border-color-delta-l-sign) * calc(17 / 255 * 100%));
 	--border-color-low: hsl(var(--border-color-low-hsl));
 
-	--primary-color-high: #1976d2;
-	--primary-color-medium: #1564c0;
-	--primary-color-low: #0d46a1;
+	--primary-color-high: #ed741d;
+	--primary-color-medium: #d9680f;
+	--primary-color-low: #b3550c;
 	--on-primary-color: var(--background-color-high);
 
 	--error-color-high-rgb: 246, 43, 18;
@@ -128,9 +128,9 @@
 	--text-color-l: 100%;
 	--border-color-delta-l-sign: 1;
 
-	--primary-color-high: #00000;
-	--primary-color-medium: #448da6;
-	--primary-color-low: #3c7a8d;
+	--primary-color-high: #b3550c;
+	--primary-color-medium: #d9680f;
+	--primary-color-low: #b3550c;
 
 	--error-color-high-rgb: 209, 86, 83;
 	--error-color-medium: #bf4e4c;
@@ -982,8 +982,8 @@ header a {
 }
 
 header .brand:hover, header ul .active > a {
-	background-color: #333;
-	background-color: rgba(255, 255, 255, 0.05);
+	background-color: #d9cfc5;
+	background-color: rgba(237, 116, 29, 0.07);
 	color: #fff;
 	text-decoration: none;
 }
@@ -1011,7 +1011,7 @@ header p {
 }
 
 header {
-	background: linear-gradient(#333333, #222222);
+	background: linear-gradient(#d9cfc5333, #222222);
 	box-shadow: 0 1px 3px hsla(var(--border-color-low-hsl), .25), inset 0 -1px 0 hsla(var(--border-color-low-hsl), .01);
 	padding: 0;
 	/* the redundant properties below work around a csstidy bug */
@@ -1051,12 +1051,12 @@ header {
 }
 
 .nav a.menu:hover {
-	background: #444;
-	background: rgba(255, 255, 255, 0.05);
+	background: #d9cfc5;
+	background: rgba(237, 116, 29, 0.07);
 }
 
 .nav .dropdown-menu {
-	background-color: #333;
+	background-color: #d9cfc5;
 }
 
 .nav .dropdown-menu a.menu {
@@ -1793,7 +1793,7 @@ select + .cbi-button,
 	margin: -1.6em 0 0 -5px;
 	border-radius: 3px;
 	pointer-events: none;
-	box-shadow: 0 0 3px #444;
+	box-shadow: 0 0 3px #d9cfc5;
 }
 
 .zonebadge .cbi-tooltip > * {
@@ -2416,7 +2416,7 @@ div.cbi-value var.cbi-tooltip-container,
 .cbi-filebrowser {
 	min-width: 210px;
 	max-width: 100%;
-	border: 1px solid #ccc;
+	border: 1px solid #b5aca3;
 	border-radius: 3px;
 	display: flex;
 	flex-direction: column;
@@ -2439,7 +2439,7 @@ div.cbi-value var.cbi-tooltip-container,
 	padding: 0 0 .25em 0;
 	margin: .25em .25em 0px .25em;
 	white-space: nowrap;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid #b5aca3;
 }
 
 .cbi-filebrowser .cbi-button-positive {
@@ -2456,7 +2456,7 @@ div.cbi-value var.cbi-tooltip-container,
 }
 
 .cbi-filebrowser > ul > li:hover {
-	background: #f5f5f5;
+	background: #ffffff;
 }
 
 .cbi-filebrowser > ul > li > div:first-child {
@@ -2481,7 +2481,7 @@ div.cbi-value var.cbi-tooltip-container,
 	flex-wrap: wrap;
 	margin: 0 -.125em .25em -.125em;
 	padding: 0 0 .125em 0px;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid #b5aca3;
 }
 
 .cbi-filebrowser .upload > * {
